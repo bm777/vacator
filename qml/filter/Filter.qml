@@ -34,7 +34,7 @@ Rectangle {
 
         Image {
             source: "../../img/image.png"
-            height: parent.height * 0.7
+            height: parent.height
             width: height
             anchors.verticalCenter: parent.verticalCenter
         }
