@@ -34,6 +34,9 @@ Rectangle {
 
         Image {
             source: "../../img/image.png"
+            height: parent.height * 0.7
+            width: height
+            anchors.verticalCenter: parent.verticalCenter
         }
     }
 }
