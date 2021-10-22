@@ -16,10 +16,20 @@ Rectangle {
             GradientStop {position: 1.0; color: "#3D4162"}
         }
     }
+
+    //  vertical separator
     Rectangle {
         width: 1
         height: parent.height
         x: parent.width - width
         color: "#4F557A"
+    }
+
+    Rectangle {
+        id: logo
+        width: parent.width
+        height: width * 0.333
+        border.color: "red"
+        color: "transparent"
     }
 }
