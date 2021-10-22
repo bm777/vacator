@@ -38,5 +38,10 @@ Rectangle {
             width: height
             anchors.verticalCenter: parent.verticalCenter
         }
+        Text {
+            id: logomark
+            text: qsTr("dClimate")
+            font{family: "Nunito"; pointSize: 14}
+        }
     }
 }
