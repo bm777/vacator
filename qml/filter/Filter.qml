@@ -33,8 +33,8 @@ Rectangle {
         color: "transparent"
 
         Image {
-            source: "../../img/image.png"
-            height: parent.height
+            source: "../../img/dc.png"
+            height: parent.height * 0.8
             width: height
             anchors.verticalCenter: parent.verticalCenter
         }
