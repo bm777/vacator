@@ -41,7 +41,7 @@ Rectangle {
         Text {
             id: logomark
             text: qsTr("dClimate")
-            font{family: "Nunito"; pointSize: 14}
+            font{family: "Nunito"; pointSize: 14; bold: true}
             anchors.verticalCenter: parent.verticalCenter
             color: "#ffffff"
             anchors.left: dc.right
