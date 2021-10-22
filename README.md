@@ -1,9 +1,5 @@
-# wsaver
-Dashboard to show data in real time from virtual weather radiosonde of [Kanda challenge](https://taikai.network/en/kanda-weather-group/challenges/kanda-weather/overview). 
-
-[click below to see the demo :) ]
-
-[![](http://img.youtube.com/vi/tGd_5L34Pzs/0.jpg)](https://youtu.be/tGd_5L34Pzs)
+# Vacator
+Dashboard to show the place on where we can go for vacation
 
 
 ### What I used ?
@@ -20,8 +16,8 @@ these requirements is under requirements.txt.
 #### 1. using final pip package (you can run it anytime), you can see what I'm developing.
 You can clone and try it using simple command :)
 ```
-git clone https://github.com/bm777/wsaver.git
-cd wsaver
+git clone https://github.com/bm777/vacator.git
+cd vacator
 pip3 install -r requirements.txt
 python3 main.py
 ```
@@ -30,5 +26,5 @@ python3 main.py
 You have only have the possibility to launch as a pip3 software.
 I'm preparing the pip file so that you can do easily
 ```
-pip3 install wsaver
+pip3 install vacator
 ```
