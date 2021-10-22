@@ -31,5 +31,9 @@ Rectangle {
         height: width * 0.333
         border.color: "red"
         color: "transparent"
+
+        Image {
+            source: "../../img/dclimate.png"
+        }
     }
 }
