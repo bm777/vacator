@@ -15,6 +15,16 @@ Window {
     maximumWidth: 1000
     visible: true
 
+    LinearGradient {
+        anchors.fill: parent
+        start: Qt.point(0, 0)
+        end: Qt.point(parent.width, 0)
+        gradient: Gradient {
+            GradientStop {position: 0.0; color: "#363F60"}
+            GradientStop {position: 1.0; color: "#2E3859"}
+        }
+    }
+
     /*
         filter
     */
