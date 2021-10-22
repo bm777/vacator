@@ -32,7 +32,7 @@ Rectangle {
         border.color: "red"
         color: "transparent"
 
-        Image {
+        Image {id: dc
             source: "../../img/dc.png"
             height: parent.height * 0.8
             width: height
@@ -42,6 +42,10 @@ Rectangle {
             id: logomark
             text: qsTr("dClimate")
             font{family: "Nunito"; pointSize: 14}
+            anchors.verticalCenter: parent.verticalCenter
+            color: "#ffffff"
+            anchors.left: dc.right
+            anchors.leftMargin: 0
         }
     }
 }
