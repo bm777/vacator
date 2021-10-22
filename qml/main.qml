@@ -3,7 +3,7 @@ import QtQuick.Window 2.13
 import QtQuick.Controls 2.2
 import QtGraphicalEffects 1.12
 import "filter"
-
+import "condition"
 Window {
     id: root
     title: qsTr("Vacator")
@@ -28,8 +28,8 @@ Window {
     /*
         filter
     */
-    Filter {
-        id: filter
+    Condition {
+        id: condition
 
     }
 
