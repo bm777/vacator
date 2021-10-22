@@ -15,6 +15,19 @@ Window {
     maximumWidth: 1000
     visible: true
 
+    /*
+        filter
+    */
+    Filter {
+        id: filter
+
+    }
+
+
+
+    /*
+        filter
+    */
     Filter {
         id: filter
 
