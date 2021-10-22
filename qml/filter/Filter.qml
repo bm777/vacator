@@ -33,7 +33,7 @@ Rectangle {
         color: "transparent"
 
         Image {
-            source: "../../img/dclimate.png"
+            source: "../../img/image.png"
         }
     }
 }
