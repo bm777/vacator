@@ -29,7 +29,7 @@ Rectangle {
         id: logo
         width: parent.width
         height: width * 0.333
-        border.color: "red"
+//        border.color: "red"
         color: "transparent"
 
         Image {id: dc
