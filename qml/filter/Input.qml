@@ -13,7 +13,7 @@ Rectangle {
     property string indicator: ""
     property string warning: ""
     property string status: ""
-    property real distance: set.height
+    property real distance: content.text =="" ? 20 : set.height+20
     signal click
 
     /**
