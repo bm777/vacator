@@ -126,13 +126,9 @@ Rectangle {
         }
     }
 
-    transitions: [
-        Transition {
-            from: "fromState"
-            to: "toState"
-
-        }
-    ]
+    ColorAnimation on color {
+        duration: 1000
+    }
 
 
 }
