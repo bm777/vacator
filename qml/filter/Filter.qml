@@ -66,6 +66,10 @@ Rectangle {
     Input {
         id: place
         anchors.top: tools.bottom
+        y: {
+            return tools.y + tools.height +
+        }
+
         placeholder_text: "Washingtown"
         img_src: "../../img/place-bold.png"
         indicator: "Place"
