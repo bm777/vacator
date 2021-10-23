@@ -67,7 +67,7 @@ Rectangle {
         id: place
         anchors.top: tools.bottom
         y: {
-            return tools.y + tools.height +
+            return tools.y + tools.height + distance
         }
 
         placeholder_text: "Washingtown"

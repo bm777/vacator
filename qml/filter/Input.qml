@@ -13,6 +13,7 @@ Rectangle {
     property string indicator: ""
     property string warning: ""
     property string status: ""
+    property real distance: set.height
     signal click
 
     /**
@@ -41,11 +42,6 @@ Rectangle {
     radius: height * 0.25
     width: parent.width * 0.88
     height: width * 0.23
-    anchors.topMargin: {
-        if(set.visible) return 20 + set.height
-        else return 20
-    }
-
     anchors.horizontalCenter: parent.horizontalCenter
 
     /*
