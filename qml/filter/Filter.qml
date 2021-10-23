@@ -70,6 +70,7 @@ Rectangle {
         img_src: "../../img/place-bold.png"
         indicator: "Place"
 
+
         // colorAnimation
 //        ColorAnimation on color {
 //            duration: 1000
