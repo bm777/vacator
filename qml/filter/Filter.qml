@@ -65,27 +65,23 @@ Rectangle {
     */
     Input {
         id: place
-        anchors.top: tools.bottom
-        y: {
-            return tools.y + tools.height + distance
-        }
-
+        y: tools.y + tools.height + distance
         placeholder_text: "Washingtown"
         img_src: "../../img/place-bold.png"
         indicator: "Place"
 
         // colorAnimation
-        ColorAnimation on color {
-            duration: 1000
-        }
-        NumberAnimation on y {
-            duration: 1000
-        }
+//        ColorAnimation on color {
+//            duration: 1000
+//        }
+//        NumberAnimation on y {
+//            duration: 1000
+//        }
     }
 
     Input {
         id: date
-        anchors.top: place.bottom
+        y: place.y + place.height + distance
         placeholder_text: "Washingtown"
         img_src: "../../img/place-bold.png"
         indicator: "Place"
