@@ -4,7 +4,7 @@ import QtGraphicalEffects 1.12
 
 Rectangle {
     id: root
-    width: parent.width * 0.22
+    width: parent.width * 0.23
     height: parent.height
 
     LinearGradient {
@@ -48,4 +48,36 @@ Rectangle {
             anchors.leftMargin: 0
         }
     }
+
+
+    Text {
+        id: tools
+        text: qsTr("Operation tools")
+        anchors.top: logo.bottom
+        anchors.topMargin: 15
+        x: parent.width * 0.16
+        color: "#b7b6e6"
+        font{family: "Nunito"; pointSize: 10}
+    }
+
+    /*
+        place Input
+    */
+    Input {
+        id: place
+        anchors.top: tools.bottom
+        placeholder_text: "Washingtown"
+        img_src: "../../img/place-bold.png"
+        indicator: "Place"
+    }
+
+    Input {
+        id: date
+        anchors.top: place.bottom
+        placeholder_text: "Washingtown"
+        img_src: "../../img/place-bold.png"
+        indicator: "Place"
+    }
+
 }
+

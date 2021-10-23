@@ -1,3 +1,3 @@
 {
-    "files": ["README.md","qml/town/Town.qml","git-sync.sh","qml/condition/Condition.qml","LICENSE","qml/temperature/Temperature.qml","main.py","qml/filter/Filter.qml","qml/filter/Theme.qml","qml/air/Air.qml","main.pyproject.user","requirements.txt","qml/rainfall/Rainfall.qml","main.qml","qml/main.qml","qml/filter/Input.qml"]
+    "files": ["requirements.txt","qml/filter/Input.qml","qml/town/Town.qml","LICENSE","qml/filter/Filter.qml","qml/rainfall/Rainfall.qml","qml/main.qml","qml/condition/Condition.qml","qml/filter/Theme.qml","README.md","main.qml","main.py","main.pyproject.user","git-sync.sh","qml/air/Air.qml","qml/temperature/Temperature.qml","img/dc.png","img/rain.gif","img/cloud.png","img/sun.png","img/user.png","img/notification.png","img/switch-town.png","img/switch.png","img/calendar.png","img/calendar-bold.png","img/place.png","img/place-bold.png"]
 }
