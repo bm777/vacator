@@ -126,9 +126,13 @@ Rectangle {
         }
     }
 
-    Behavior on y {
-        NumberAnimation {duration: 1000}
-    }
+    transitions: [
+        Transition {
+            from: "fromState"
+            to: "toState"
+
+        }
+    ]
 
 
 }
