@@ -69,6 +69,14 @@ Rectangle {
         placeholder_text: "Washingtown"
         img_src: "../../img/place-bold.png"
         indicator: "Place"
+
+        // colorAnimation
+        ColorAnimation on color {
+            duration: 1000
+        }
+        NumberAnimation on y {
+            duration: 1000
+        }
     }
 
     Input {
