@@ -74,9 +74,9 @@ Rectangle {
 //        ColorAnimation on color {
 //            duration: 1000
 //        }
-//        NumberAnimation on y {
-//            duration: 1000
-//        }
+        NumberAnimation on y {
+            duration: 1000
+        }
     }
 
     Input {
