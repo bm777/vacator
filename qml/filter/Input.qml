@@ -13,7 +13,17 @@ Rectangle {
     property string indicator: ""
     property string warning: ""
     property string status: ""
-    property real distance: content.text =="" ? 20 : set.height+20
+//    property real distance: content.text =="" ? 20 : set.height+20
+    property real distance: {
+        if(indicator === "Place"){
+            if(content.text =="") return 0
+            else return 0
+        }else{
+            if(content.text =="") return 20
+            else return set.height+20
+        }
+    }
+
     signal click
 
     /**
