@@ -58,6 +58,7 @@ Rectangle {
         background: Rectangle { color: "transparent" }
         enabled: indicator !== "Date"
         selectByMouse: true
+        text: inputDate.date_
         clip: true
         cursorVisible: false
         anchors.left: img_input.right

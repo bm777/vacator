@@ -5,7 +5,7 @@ Rectangle {
     id: root
     color: "transparent"
     property string scheduled: day.model[day.currentIndex]
-    property string date_start: {
+    property string date_: {
         var index_day = day.currentIndex
 
         var formated_date = new Date( new Date().setDate(new Date().getDate() +index_day))
