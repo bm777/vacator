@@ -13,7 +13,7 @@ Rectangle {
     property string indicator: ""
     property string warning: ""
     property string status: ""
-    property real distance: content.text =="" ? 20 : set.height+20
+    property real distance: 20
     signal click
 
     /**
@@ -89,35 +89,35 @@ Rectangle {
     /*
         reset Button
     */
-    Rectangle {
-        id: set
-        height: parent.height * 0.6
-        width: height
-        radius: height/2
-        color: "#C2CED3"
-        anchors.bottom: root.top
-        anchors.bottomMargin: root.radius/2
-        x: parent.width - width
-        visible:  {
-            if(!(content.text == "")) {
-                root.color = "#7564FB"
-            }else root.color = "transparent"
+//    Rectangle {
+//        id: set
+//        height: parent.height * 0.6
+//        width: height
+//        radius: height/2
+//        color: "#C2CED3"
+//        anchors.bottom: root.top
+//        anchors.bottomMargin: root.radius/2
+//        x: parent.width - width
+//        visible:  {
+//            if(!(content.text == "")) {
+//                root.color = "#7564FB"
+//            }else root.color = "transparent"
 
-            return !(content.text == "")
-        }
+//            return !(content.text == "")
+//        }
 
-        Text {
-            text: qsTr("x")
-            anchors.centerIn: parent
-            color: "#5E676E"
-            font{family: "Nunito"; pointSize: 15}
-        }
+//        Text {
+//            text: qsTr("x")
+//            anchors.centerIn: parent
+//            color: "#5E676E"
+//            font{family: "Nunito"; pointSize: 15}
+//        }
 
-        MouseArea {
-            anchors.fill: parent
-            onClicked: content.text = ""
-        }
-    }
+//        MouseArea {
+//            anchors.fill: parent
+//            onClicked: content.text = ""
+//        }
+//    }
 
     ColorAnimation on color {
         duration: 1000
