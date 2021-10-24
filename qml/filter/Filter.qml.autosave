@@ -131,7 +131,7 @@ Rectangle {
         width: user.width
         height: user.height
         radius: height/2
-
+        color: ""
         Image {
             id: user
             source: "../../img/user.png"
