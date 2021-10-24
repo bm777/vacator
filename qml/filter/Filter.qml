@@ -74,7 +74,7 @@ Rectangle {
             text: "Sort out"
             font{family: "Nunito"; pointSize: 14}
             anchors.centerIn: parent
-            color: "#813117"
+            color: "#806FFF"
         }
     }
 
