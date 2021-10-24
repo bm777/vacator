@@ -52,7 +52,7 @@ Rectangle {
 
     Text {
         id: tools
-        text: qsTr("Filter tools")
+        text: qsTr("Filter")
         anchors.top: logo.bottom
         anchors.topMargin: 15
         x: parent.width * 0.16
