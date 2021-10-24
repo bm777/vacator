@@ -128,14 +128,19 @@ Rectangle {
 
     //
     Rectangle {
-        width: user.width
-        height: user.height
+        y: parent.height - height *1.5
+        x: width/2
+        width: user.width * 1.6
+        height: width
         radius: height/2
+        color: "#80F2F2F2"
 
         Image {
             id: user
             source: "../../img/user.png"
             anchors.centerIn: parent
+            width: 25
+            height: width
         }
     }
 
