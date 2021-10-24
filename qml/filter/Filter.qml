@@ -61,6 +61,18 @@ Rectangle {
     }
 
     /*
+        submit button
+    */
+    Rectangle {
+        width: parent.width * 0.88
+        height: width * 0.23
+        anchors.horizontalCenter: parent.horizontalCenter
+        y: parent.height - height * 4
+        color: "#01A2F8"
+        radius: height * 0.25
+    }
+
+    /*
         place Input
     */
     Input {
@@ -108,18 +120,7 @@ Rectangle {
         }
     }
 
-
-    /*
-        submit button
-    */
-    Rectangle {
-        width: parent.width * 0.88
-        height: width * 0.23
-        anchors.horizontalCenter: parent.horizontalCenter
-        y: parent.height - height * 4
-        color: "#01A2F8"
-        radius: height * 0.25
-    }
+    //
 
 }
 
