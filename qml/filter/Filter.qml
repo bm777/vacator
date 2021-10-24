@@ -70,6 +70,11 @@ Rectangle {
         y: parent.height - height * 4
         color: "#E3F085"
         radius: height * 0.25
+        Text {
+            text: "Sort out"
+            font{family: "Nunito"; pointSize: 12}
+            anchors.centerIn: parent
+        }
     }
 
     /*
