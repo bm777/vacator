@@ -72,8 +72,9 @@ Rectangle {
         radius: height * 0.25
         Text {
             text: "Sort out"
-            font{family: "Nunito"; pointSize: 12}
+            font{family: "Nunito"; pointSize: 14}
             anchors.centerIn: parent
+            color: "#CF642D"
         }
     }
 
