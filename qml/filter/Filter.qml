@@ -52,7 +52,7 @@ Rectangle {
 
     Text {
         id: tools
-        text: qsTr("Operation tools")
+        text: qsTr("Filter tools")
         anchors.top: logo.bottom
         anchors.topMargin: 15
         x: parent.width * 0.16
@@ -100,7 +100,7 @@ Rectangle {
         y: date.y + date.height + distance
         placeholder_text: "Washingtown"
         img_src: "../../img/place-bold.png"
-        indicator: "Compare"
+        indicator: "Comparison place"
 
         // colorAnimation
         Behavior on color {
