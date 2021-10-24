@@ -65,7 +65,7 @@ Rectangle {
     */
     Input {
         id: place
-        y: tools.y + tools.height + distance
+        y: tools.y + tools.height + 10
         placeholder_text: "Washingtown"
         img_src: "../../img/place-bold.png"
         indicator: "Place"
