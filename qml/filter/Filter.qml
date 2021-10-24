@@ -106,8 +106,18 @@ Rectangle {
         Behavior on color {
             PropertyAnimation{ duration: 500 }
         }
+    }
 
-
+    /*
+        submit button
+    */
+    Rectangle {
+        width: parent.width * 0.88
+        height: width * 0.23
+        anchors.horizontalCenter: parent.horizontalCenter
+        y: parent.height - height * 3
+        color: "#01A2F8"
+        radius: height * 0.25
     }
 
 }
