@@ -68,7 +68,7 @@ Rectangle {
         height: width * 0.23
         anchors.horizontalCenter: parent.horizontalCenter
         y: parent.height - height * 4
-        color: "#E3F085"
+        color: "#000011"
         radius: height * 0.25
         Text {
             text: "Sort out"
