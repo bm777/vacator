@@ -34,7 +34,13 @@ Window {
 
     }
 
+    /*
+        filter
+    */
+//    Cu {
+//        id: cursor
 
+//    }
 
     /*
         filter
