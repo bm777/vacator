@@ -94,18 +94,18 @@ Rectangle {
         }
 
         Rectangle {
-            width: parent.width * 0.3
+            width: parent.width * 0.5
             height: parent.height * 0.15
-            y: parent.height - height
+            y: parent.height - height * 1.2
             anchors.horizontalCenter: parent.horizontalCenter
-            color: "#0984e3"
+            color: "#7765FD"
             radius: height/2
             border.color: "#484F59"
             Text {
                 anchors.centerIn: parent
                 text: "save"
                 color: "#ffffff"
-                font{pointSize: 15; family: "Nunito"}
+                font{pointSize: 12; family: "Nunito"}
             }
             MouseArea {
                 anchors.fill: parent
