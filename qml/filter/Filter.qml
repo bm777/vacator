@@ -72,19 +72,26 @@ Rectangle {
 
 
         // colorAnimation
-//        ColorAnimation on color {
-//            duration: 1000
-//        }
+        Behavior on color {
+            PropertyAnimation{ duration: 500 }
+        }
+
 
     }
 
-    Input {
+    InputLabel {
         id: date
         y: place.y + place.height + distance
-        placeholder_text: "Washingtown"
-        img_src: "../../img/place-bold.png"
-        indicator: "Place"
+        placeholder_text: "Today"
+        img_src: "../../img/calendar-bold.png"
+        indicator: "Date"
+
+        Behavior on color {
+            PropertyAnimation{ duration: 500 }
+        }
     }
+
+
 
 }
 

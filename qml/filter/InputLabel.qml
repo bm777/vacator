@@ -28,8 +28,8 @@ Rectangle {
     */
     MouseArea {
         anchors.fill: parent
-        hoverEnabled: true
         onClicked: {
+            inputDate.visible = true
         }
     }
 
@@ -59,15 +59,14 @@ Rectangle {
     /*
         text of the input with value
     */
-    TextField {id: content
+    TextField {
+        id: content
         placeholderText: placeholder_text
         color: "#f6f6f6"
         maximumLength: 20
         width: parent.width - (img_input.x+img_input.width + 5)
         font{family: "Nunito"; pointSize: 12; bold: true}
-        background: Rectangle {
-            color: "transparent"
-        }
+        background: Rectangle { color: "transparent" }
         enabled: indicator !== "Date"
         selectByMouse: true
         clip: true
@@ -75,6 +74,12 @@ Rectangle {
         anchors.left: img_input.right
         y: parent.height * 0.5 - height * 0.6
 
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                inputDate.visible = true
+            }
+        }
 
     }
 
@@ -128,5 +133,13 @@ Rectangle {
         duration: 1000
     }
 
+    InputDate {
+        id: inputDate
+        height: width
+        width: parent.width
+        anchors.top: root.bottom
+        anchors.topMargin: 20
+        visible: false
+    }
 
 }
