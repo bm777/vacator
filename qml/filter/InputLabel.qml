@@ -130,6 +130,7 @@ Rectangle {
         anchors.top: root.bottom
         anchors.topMargin: 20
         visible: false
+        onDate_Changed: content.text = inputDate.date_
     }
 
 
