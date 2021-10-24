@@ -9,7 +9,6 @@ Rectangle {
     **/
     property string placeholder_text: ""
     property string img_src: ""
-    property string plaintext: ""
     property string indicator: ""
     property string warning: ""
     property string status: ""
