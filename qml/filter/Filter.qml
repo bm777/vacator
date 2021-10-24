@@ -80,21 +80,6 @@ Rectangle {
     /*
         compare Input
     */
-    InputLabel {
-        id: date
-        y: place.y + place.height + distance
-        placeholder_text: "Today"
-        img_src: "../../img/calendar-bold.png"
-        indicator: "Date"
-
-        Behavior on color {
-            PropertyAnimation{ duration: 500 }
-        }
-    }
-
-    /*
-        compare Input
-    */
     Input {
         id: compare
         y: date.y + date.height + distance
@@ -109,13 +94,29 @@ Rectangle {
     }
 
     /*
+        compare Input
+    */
+    InputLabel {
+        id: date
+        y: place.y + place.height + distance
+        placeholder_text: "Today"
+        img_src: "../../img/calendar-bold.png"
+        indicator: "Date"
+
+        Behavior on color {
+            PropertyAnimation{ duration: 500 }
+        }
+    }
+
+
+    /*
         submit button
     */
     Rectangle {
         width: parent.width * 0.88
         height: width * 0.23
         anchors.horizontalCenter: parent.horizontalCenter
-        y: parent.height - height * 3
+        y: parent.height - height * 2
         color: "#01A2F8"
         radius: height * 0.25
     }
