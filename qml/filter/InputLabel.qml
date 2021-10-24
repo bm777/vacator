@@ -23,17 +23,6 @@ Rectangle {
 
     }
 
-    /*
-        MouseArea a nd action
-    */
-    MouseArea {
-        anchors.fill: parent
-        onClicked: {
-            inputDate.visible = true
-        }
-    }
-
-
     /**
         rectangle properties
     **/
@@ -140,6 +129,17 @@ Rectangle {
         anchors.top: root.bottom
         anchors.topMargin: 20
         visible: false
+    }
+
+
+    /*
+        MouseArea a nd action
+    */
+    MouseArea {
+        anchors.fill: parent
+        onClicked: {
+            inputDate.visible = true
+        }
     }
 
 }

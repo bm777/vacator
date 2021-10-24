@@ -23,7 +23,7 @@ Rectangle {
 
     Rectangle {
         id: frame
-        color: "#333742"
+        color: "#2E3957"
         width: parent.height
         height: parent.height
         radius: 10
