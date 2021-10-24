@@ -70,15 +70,16 @@ Rectangle {
         img_src: "../../img/place-bold.png"
         indicator: "Place"
 
-
         // colorAnimation
         Behavior on color {
             PropertyAnimation{ duration: 500 }
         }
 
-
     }
 
+    /*
+        compare Input
+    */
     InputLabel {
         id: date
         y: place.y + place.height + distance
@@ -91,7 +92,23 @@ Rectangle {
         }
     }
 
+    /*
+        compare Input
+    */
+    Input {
+        id: compare
+        y: date.y + date.height + distance
+        placeholder_text: "Washingtown"
+        img_src: "../../img/place-bold.png"
+        indicator: "Compare"
 
+        // colorAnimation
+        Behavior on color {
+            PropertyAnimation{ duration: 500 }
+        }
+
+
+    }
 
 }
 
