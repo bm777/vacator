@@ -60,23 +60,23 @@ Rectangle {
         font{family: "Nunito"; pointSize: 10}
     }
 
-    /*
-        submit button
-    */
-    Rectangle {
-        width: parent.width * 0.88
-        height: width * 0.23
-        anchors.horizontalCenter: parent.horizontalCenter
-        y: parent.height - height * 4
-        color: "#000011"
-        radius: height * 0.25
-        Text {
-            text: "Sort out"
-            font{family: "Nunito"; pointSize: 14}
-            anchors.centerIn: parent
-            color: "#806FFF"
-        }
-    }
+//    /*
+//        submit button
+//    */
+//    Rectangle {
+//        width: parent.width * 0.88
+//        height: width * 0.23
+//        anchors.horizontalCenter: parent.horizontalCenter
+//        y: parent.height - height * 4
+//        color: "#000011"
+//        radius: height * 0.25
+//        Text {
+//            text: "Sort out"
+//            font{family: "Nunito"; pointSize: 14}
+//            anchors.centerIn: parent
+//            color: "#806FFF"
+//        }
+//    }
 
     /*
         place Input
