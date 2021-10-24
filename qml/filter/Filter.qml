@@ -133,7 +133,7 @@ Rectangle {
         width: user.width * 1.6
         height: width
         radius: height/2
-        border.color: "#80F2F2F2"
+        color: "#000011"
 
         Image {
             id: user
