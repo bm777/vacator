@@ -44,7 +44,7 @@ Item {
             repeat: true
             running: true
 
-            onTriggered: mess_id.type()
+            onTriggered: mess_id.type2()
             onRunningChanged: running === false ? /*print("Stopped.")*/ null : null
         }
 
@@ -83,6 +83,7 @@ Item {
             }
             mess_id.text = text;
         }
+
         function untype() {
             --j
             text = message.slice(0, j)
