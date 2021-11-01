@@ -48,7 +48,7 @@ Item {
         id: line
         width: 1
         height: mess_id.height * 1
-        PropertyAnimation {duration: 50; property: visible; from: false; to: true}
+        
 
     }
 
