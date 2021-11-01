@@ -34,12 +34,15 @@ Item {
             running: true
 
             onTriggered: mess_id.type()
-            onRunningChanged: running === false ? print("Stopped.") : null
+            onRunningChanged: running === false ? /*print("Stopped.")*/ null : null
         }
 
         function type() {
             text = message.slice(0, ++i);
-            if (text === message) return timer.stop()
+            if (text === message) {
+                line.visible = false
+                return timer.stop()
+            }
 
             mess_id.text = text;
         }
