@@ -45,11 +45,11 @@ Item {
 //            running: true
 
             onTriggered: mess_id.untype()
-//            onRunningChanged: running === false ? /*print("Stopped.")*/ null : null
+            onRunningChanged: running === false ? /*print("Stopped.")*/ null : null
         }
 
         function type() {
-            text = message.slice(0, ++i);
+            var text = message.slice(0, ++i);
             if (text === message) {
                 close_timer.running = true
                 return timer.stop()
