@@ -54,6 +54,7 @@ Window {
         Cursor {
             id: cursor
 
+
         }
 
         /*

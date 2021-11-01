@@ -11,6 +11,7 @@ Item {
 
     Text {
         id: greating
+        text: welcome
         font{family: "Nunito"; pointSize: 12}
         x: parent.width * 0.1
         y: parent.height * 0.15
@@ -19,25 +20,23 @@ Item {
 
     Text {
         id: mess
+        text: message
         font{family: "Nunito"; pointSize: 18}
         x: parent.width * 0.1
         y: parent.height * 0.5
         color: "#ffffff"
     }
 
-    Component.onCompleted: {
-        edit(message)
-    }
 
-    Timer {
-        id: timer
-        interval: 1000
-        repeat: false
-        running: active
-        onTriggered: {
-            mess.text = message
-        }
-    }
+//    Timer {
+//        id: timer
+//        interval: 1000
+//        repeat: false
+//        running: active
+//        onTriggered: {
+//            mess.text = message
+//        }
+//    }
     // **
 
     // **
