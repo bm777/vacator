@@ -49,7 +49,8 @@ Item {
         }
 
         function type() {
-            text = message2.slice(0, ++i);
+            text = message.slice(0, ++i);
+            print(message.slice(message.length, ++j))
             if (text === message) {
                 close_timer.running = true
                 return timer.stop()
@@ -58,7 +59,7 @@ Item {
             mess_id.text = text;
         }
         function untype() {
-            text = message2.slice(message.length, --j);
+            text = message.slice(message.length, --j);
             if (text === message) {
                 close_timer.running = true
                 return timer.stop()
