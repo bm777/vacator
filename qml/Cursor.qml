@@ -38,7 +38,7 @@ Item {
             onRunningChanged: running === false ? /*print("Stopped.")*/ null : null
         }
         Timer {
-            id: timer2
+            id: close_timer
             interval: 100
             repeat: true
             running: true
@@ -48,9 +48,10 @@ Item {
         }
 
         function type() {
-            text = message.slice(0, ++i);
+            text = message2.slice(0, ++i);
             if (text === message) {
 //                line.visible = false
+                timer2.running = true
                 return timer.stop()
             }
 
