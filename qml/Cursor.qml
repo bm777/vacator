@@ -20,7 +20,7 @@ Item {
         font{family: "Nunito"; pointSize: 12}
         x: parent.width * 0.1
         y: parent.height * 0.15
-        color: "#ffffff"
+        color: "#70ffffff"
     }
 
     Text {
