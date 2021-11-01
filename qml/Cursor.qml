@@ -4,7 +4,7 @@ Item {
     id: root
     property string welcome: "Hi,"
     property string message: "Welcome back :) "
-//    property string message2: "And enjoy with spot vacation finder.."
+    property string message2: "And enjoy with spot vacation finder.."
     property bool active: false
     property int i: 0
     property int j: message.length
@@ -42,7 +42,6 @@ Item {
             id: timer2
             interval: 120
             repeat: true
-            running: true
 
             onTriggered: mess_id.type2()
             onRunningChanged: running === false ? /*print("Stopped.")*/ null : null
@@ -52,7 +51,6 @@ Item {
             id: close_timer
             interval: 80
             repeat: true
-//            running: true
 
             onTriggered: mess_id.untype()
             onRunningChanged: running === false ? /*print("Stopped.")*/ null : null
@@ -63,7 +61,7 @@ Item {
             repeat: true
 //            running: true
 
-            onTriggered: mess_id.untype()
+            onTriggered: mess_id.untype2()
             onRunningChanged: running === false ? /*print("Stopped.")*/ null : null
         }
 
@@ -89,7 +87,7 @@ Item {
             text = message.slice(0, j)
             print(j, message.length - j)
             if (text === "") {
-                close_timer.running = true
+                timer2.running = true
                 return close_timer.stop()
             }
 
