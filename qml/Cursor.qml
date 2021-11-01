@@ -29,11 +29,11 @@ Item {
 
         Timer {
             id: timer
-            interval: 1000
+            interval: 100
             repeat: true
             running: true
 
-            onTriggered: root.type()
+            onTriggered: mess_id.type()
             onRunningChanged: running === false ? print("Stopped.") : null
         }
 
@@ -41,7 +41,7 @@ Item {
             text = message.slice(0, ++i);
             if (text === message) return timer.stop()
 
-            text = text;
+            mess_id.text = text;
         }
     }
 
