@@ -1,4 +1,4 @@
-import QtQuick 2.0
+﻿import QtQuick 2.0
 import QtQuick.Controls 2.2
 import QtGraphicalEffects 1.12
 
@@ -6,6 +6,7 @@ Rectangle {
     id: root
     width: parent.width * 0.23
     height: parent.height
+    property bool dark: true
 
     LinearGradient {
         anchors.fill: parent
@@ -127,22 +128,75 @@ Rectangle {
     }
 
     //
-    Rectangle {
+    Rectangle {id: frame
         y: parent.height - height *1.5
-        x: width/2
-        width: user.width * 1.6
-        height: width
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: height * 3
+        height: 35
         radius: height/2
-        color: "#000011"
+        color: dark ? "#27173B" : "#2E3957"
 
-        Image {
-            id: user
-            source: "../../img/user.png"
-            anchors.centerIn: parent
-            width: 25
-            height: width
+        // for dark
+        Rectangle {id: mover
+            visible: dark
+            anchors.verticalCenter: parent.verticalCenter
+            height: parent.height * 0.7
+            width: height
+            radius: height/2
+            x: parent.width - width -(parent.height - height) /2
+            color: "#FCC304"
+            Rectangle {
+                width: parent.width
+                height: parent.height
+                x: -width * 0.3
+                radius: height/2
+                color: frame.color
+            }
         }
+        // for light
+        Image {
+            id: sun
+            visible: !dark
+            source: "../../img/sun-logo.png"
+            height: parent.height * 0.7
+            width: height
+            anchors.verticalCenter: parent.verticalCenter
+            x: parent.width * 0.1
+
+            RotationAnimation {
+                target: sun
+                running: true
+                from: 0
+                to: 360
+                loops: Animation.Infinite
+                duration: 3000
+            }
+        }
+
+        Text {
+            id: center
+            text: dark ? "Dark" : "Light"
+            font{family: "Nunito"; pointSize: 12}
+            color: "#FCC304"
+            anchors.verticalCenter: parent.verticalCenter
+            x: dark ? frame.width * 0.2 : frame.width * 0.8 - width
+
+            Behavior on x{
+                NumberAnimation { duration: 500 }
+            }
+        }
+        MouseArea {
+            anchors.fill: parent
+            hoverEnabled: true
+            onClicked: root.dark = !root.dark
+        }
+
     }
+
+
+
+
+
 
 }
 

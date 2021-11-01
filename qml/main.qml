@@ -42,12 +42,27 @@ Window {
 
 //    }
 
-    /*
-        filter
-    */
-    Condition {
-        id: condition
+    Item {
+        id: main
+        width: (parent.width - filter.width) * 0.68
+        height: parent.height
+        anchors.left: filter.right
 
+        /*
+            condition
+        */
+        Cursor {
+            id: cursor
+
+        }
+
+        /*
+            condition
+        */
+        Condition {
+            id: condition
+
+        }
     }
 
 }
