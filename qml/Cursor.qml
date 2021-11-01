@@ -7,6 +7,7 @@ Item {
     property string message2: "And enjoy with spot vacation finder.."
     property bool active: false
     property int i: 0
+    property int i2: 0
     property int j: message.length
     property int j2: message2.length
     width: parent.width
@@ -75,8 +76,7 @@ Item {
             mess_id.text = text;
         }
         function type2() {
-            i=0
-            text = message2.slice(0, ++i);
+            text = message2.slice(0, ++i2);
             if (text === message2) {
                 close_timer2.running = true
                 return timer.stop()
@@ -99,9 +99,8 @@ Item {
         function untype2() {
             --j2
             text = message2.slice(0, j2)
-            print(j2, message2.length - j2)
             if (text === "") {
-                close_timer.running = true
+                close_timer2.running = true
                 return close_timer.stop()
             }
 
