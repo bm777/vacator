@@ -78,7 +78,8 @@ Item {
         function type2() {
             text = message2.slice(0, ++i2);
             if (text === message2) {
-                close_timer2.running = true
+//                close_timer2.running = true
+                line.visible = false
                 return timer.stop()
             }
             mess_id.text = text;
@@ -91,16 +92,6 @@ Item {
             print(j, message.length - j)
             if (text === "") {
                 timer2.running = true
-                return close_timer.stop()
-            }
-
-            mess_id.text = text;
-        }
-        function untype2() {
-            --j2
-            text = message2.slice(0, j2)
-            if (text === "") {
-                close_timer2.running = true
                 return close_timer.stop()
             }
 
