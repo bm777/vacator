@@ -29,7 +29,7 @@ Item {
         font{family: "Nunito"; pointSize: 18}
         x: parent.width * 0.1
         y: parent.height * 0.5
-        color: "#ffffff"
+        color: "#80ffffff"
 
         Timer {
             id: timer
@@ -89,7 +89,7 @@ Item {
 
             --j
             text = message.slice(0, j)
-            print(j, message.length - j)
+//            print(j, message.length - j)
             if (text === "") {
                 timer2.running = true
                 return close_timer.stop()
