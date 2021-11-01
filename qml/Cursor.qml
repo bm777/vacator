@@ -57,8 +57,10 @@ Item {
             mess_id.text = text;
         }
         function untype() {
+            --i
             text = message.slice(0, message.length - i)
-            if (text === message) {
+            print(text)
+            if (text === "") {
                 close_timer.running = true
                 return timer.stop()
             }
