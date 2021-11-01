@@ -45,7 +45,7 @@ Item {
 //            running: true
 
             onTriggered: mess_id.untype()
-            onRunningChanged: running === false ? /*print("Stopped.")*/ null : null
+//            onRunningChanged: running === false ? /*print("Stopped.")*/ null : null
         }
 
         function type() {
