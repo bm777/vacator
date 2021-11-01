@@ -62,7 +62,7 @@ Item {
             print(text)
             if (text === "") {
                 close_timer.running = true
-                return timer.stop()
+                return close_timer.stop()
             }
 
             mess_id.text = text;
