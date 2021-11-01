@@ -3,7 +3,7 @@ import QtQuick 2.0
 Item {
     id: root
     property string welcome: "Hi,"
-    property string message: "Welcome back :)"
+    property string message: "Welcome back :) "
 //    property string message2: "And enjoy with spot vacation finder.."
     property bool active: false
     property int i: 0
@@ -57,7 +57,7 @@ Item {
             mess_id.text = text;
         }
         function untype() {
-            --i
+            j -= 1
             text = message.slice(0, message.length - i)
             print(text)
             if (text === "") {
