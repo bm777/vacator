@@ -47,8 +47,8 @@ Item {
     Rectangle {
         id: line
         width: 1
-        height: mess_id.height * 1
-        anchors.left: mess_id.right + 2
+        height: mess_id.height * 0.8
+        x: mess_id.x+ mess_id.width + 2
         y: mess_id.y + mess_id.height/2 - height/2
 
     }
