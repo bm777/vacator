@@ -49,7 +49,7 @@ Item {
         }
 
         function type() {
-            var text = message.slice(0, ++i);
+            text = message.slice(0, ++i);
             if (text === message) {
                 close_timer.running = true
                 return timer.stop()
@@ -58,7 +58,7 @@ Item {
         }
         function untype() {
             j -= 1
-            text = message.slice(0, message.length - i)
+            text = message.slice(0, message.length - j)
             print(text)
             if (text === "") {
                 close_timer.running = true
