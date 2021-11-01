@@ -4,7 +4,7 @@ Item {
     id: root
     property string welcome: "Hi,"
     property string message: "Welcome back :)"
-    property string message: "And enjoy with spot vacation finder.."
+    property string message2: "And enjoy with spot vacation finder.."
     property bool active: false
     property int i: 0
     width: parent.width
@@ -37,11 +37,20 @@ Item {
             onTriggered: mess_id.type()
             onRunningChanged: running === false ? /*print("Stopped.")*/ null : null
         }
+        Timer {
+            id: timer2
+            interval: 100
+            repeat: true
+            running: true
+
+            onTriggered: mess_id.type()
+            onRunningChanged: running === false ? /*print("Stopped.")*/ null : null
+        }
 
         function type() {
             text = message.slice(0, ++i);
             if (text === message) {
-                line.visible = false
+//                line.visible = false
                 return timer.stop()
             }
 
