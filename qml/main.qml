@@ -62,6 +62,7 @@ Window {
         */
         Condition {
             id: condition
+            height: parent.height - cursor.height
 
         }
     }
