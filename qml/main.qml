@@ -48,6 +48,14 @@ Window {
         height: parent.height
         anchors.left: filter.right
 
+
+        //  vertical separator
+        Rectangle {
+            width: 1
+            height: parent.height
+            x: parent.width - width
+            color: "#4F557A"
+        }
         /*
             condition
         */
@@ -62,7 +70,7 @@ Window {
         */
         Condition {
             id: condition
-            height: parent.height * (1 - 0.2) / 2
+            height: parent.height * (1 - 0.3) / 2
             anchors.top: cursor.bottom
 
         }
