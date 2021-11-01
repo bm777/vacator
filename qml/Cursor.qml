@@ -8,6 +8,7 @@ Item {
     property bool active: false
     property int i: 0
     property int j: message.length
+    property int j2: message2.length
     width: parent.width
     height: parent.height * 0.12
     Rectangle {anchors.fill: parent; border.color: "red"; color: "transparent"}
@@ -74,15 +75,17 @@ Item {
             mess_id.text = text;
         }
         function type2() {
-            text = message.slice(0, ++i);
-            if (text === message) {
-                close_timer.running = true
+            i=0
+            text = message2.slice(0, ++i);
+            if (text === message2) {
+                close_timer2.running = true
                 return timer.stop()
             }
             mess_id.text = text;
         }
 
         function untype() {
+
             --j
             text = message.slice(0, j)
             print(j, message.length - j)
@@ -94,9 +97,9 @@ Item {
             mess_id.text = text;
         }
         function untype2() {
-            --j
-            text = message.slice(0, j)
-            print(j, message.length - j)
+            --j2
+            text = message2.slice(0, j2)
+            print(j2, message2.length - j2)
             if (text === "") {
                 close_timer.running = true
                 return close_timer.stop()
