@@ -5,6 +5,7 @@ Item {
     property string welcome: "Hi,"
     property string message: "Welcome back :)"
     property bool active: false
+    property int i: 0
     width: parent.width
     height: parent.height * 0.12
     Rectangle {anchors.fill: parent; border.color: "red"; color: "transparent"}
@@ -35,17 +36,14 @@ Item {
             onTriggered: root.type()
             onRunningChanged: running === false ? print("Stopped.") : null
         }
+
+        function type() {
+            text = message.slice(0, ++i);
+            if (text === message) return timer.stop()
+
+            text = text;
+        }
     }
 
-
-
-    // **
-    function type() {
-        text = message.slice(0, ++i);
-        if (text === message) return timer.stop()
-
-        mess_id.text = text;
-    }
-    // **
 
 }
