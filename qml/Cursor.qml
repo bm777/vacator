@@ -25,20 +25,27 @@ Item {
         x: parent.width * 0.1
         y: parent.height * 0.5
         color: "#ffffff"
+
+        Timer {
+            id: timer
+            interval: 100
+            repeat: true
+            running: true
+
+            onTriggered: root.type()
+            onRunningChanged: running === false ? print("Stopped.") : null
+        }
     }
 
 
-//    Timer {
-//        id: timer
-//        interval: 1000
-//        repeat: false
-//        running: active
-//        onTriggered: {
-//            mess.text = message
-//        }
-//    }
-    // **
 
+    // **
+    function type() {
+        text = message.slice(0, ++i);
+        if (text === message) return timer.stop()
+
+        message.text = text;
+    }
     // **
 
 }
