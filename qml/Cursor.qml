@@ -19,8 +19,8 @@ Item {
     }
 
     Text {
-        id: mess
-        text: message
+        id: mess_id
+//        text: message
         font{family: "Nunito"; pointSize: 18}
         x: parent.width * 0.1
         y: parent.height * 0.5
@@ -28,7 +28,7 @@ Item {
 
         Timer {
             id: timer
-            interval: 100
+            interval: 1000
             repeat: true
             running: true
 
@@ -44,7 +44,7 @@ Item {
         text = message.slice(0, ++i);
         if (text === message) return timer.stop()
 
-        message.text = text;
+        mess_id.text = text;
     }
     // **
 
