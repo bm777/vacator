@@ -31,7 +31,7 @@ Item {
 
         Timer {
             id: timer
-            interval: 100
+            interval: 120
             repeat: true
             running: true
 
@@ -57,9 +57,9 @@ Item {
             mess_id.text = text;
         }
         function untype() {
-            j -= 1
-            text = message.slice(0, message.length - j)
-            print(text)
+            --j
+            text = message.slice(0, j)
+            print(j, message.length - j)
             if (text === "") {
                 close_timer.running = true
                 return close_timer.stop()
