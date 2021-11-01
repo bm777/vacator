@@ -50,12 +50,11 @@ Item {
 
         function type() {
             text = message.slice(0, ++i);
-            print(message.slice(0, 10))
+            print(message.slice(0, message.length - i))
             if (text === message) {
                 close_timer.running = true
                 return timer.stop()
             }
-
             mess_id.text = text;
         }
         function untype() {
