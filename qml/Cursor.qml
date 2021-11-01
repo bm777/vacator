@@ -4,9 +4,10 @@ Item {
     id: root
     property string welcome: "Hi,"
     property string message: "Welcome back :)"
-    property string message2: "And enjoy with spot vacation finder.."
+//    property string message2: "And enjoy with spot vacation finder.."
     property bool active: false
     property int i: 0
+    property int j: message.length
     width: parent.width
     height: parent.height * 0.12
     Rectangle {anchors.fill: parent; border.color: "red"; color: "transparent"}
@@ -43,15 +44,23 @@ Item {
             repeat: true
             running: true
 
-            onTriggered: mess_id.type()
+            onTriggered: mess_id.untype()
             onRunningChanged: running === false ? /*print("Stopped.")*/ null : null
         }
 
         function type() {
             text = message2.slice(0, ++i);
             if (text === message) {
-//                line.visible = false
-                timer2.running = true
+                close_timer.running = true
+                return timer.stop()
+            }
+
+            mess_id.text = text;
+        }
+        function untype() {
+            text = message2.slice(message.length, --j);
+            if (text === message) {
+                close_timer.running = true
                 return timer.stop()
             }
 
