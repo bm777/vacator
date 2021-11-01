@@ -7,4 +7,5 @@ Rectangle {
     border.color: "red"
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.topMargin: 10
+    radius: 8
 }
