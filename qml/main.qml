@@ -34,14 +34,6 @@ Window {
 
     }
 
-    /*
-        filter
-    */
-//    Cu {
-//        id: cursor
-
-//    }
-
     Item {
         id: main
         width: (parent.width - filter.width) * 0.68
