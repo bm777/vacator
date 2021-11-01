@@ -42,7 +42,7 @@ Item {
             id: close_timer
             interval: 100
             repeat: true
-            running: true
+//            running: true
 
             onTriggered: mess_id.untype()
             onRunningChanged: running === false ? /*print("Stopped.")*/ null : null
@@ -50,7 +50,6 @@ Item {
 
         function type() {
             text = message.slice(0, ++i);
-            print(message.slice(0, message.length - i))
             if (text === message) {
                 close_timer.running = true
                 return timer.stop()
@@ -58,7 +57,7 @@ Item {
             mess_id.text = text;
         }
         function untype() {
-            text = message.slice(message.length, ++j);
+            text = message.slice(0, message.length - i)
             if (text === message) {
                 close_timer.running = true
                 return timer.stop()
