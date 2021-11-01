@@ -39,8 +39,27 @@ Item {
             onRunningChanged: running === false ? /*print("Stopped.")*/ null : null
         }
         Timer {
+            id: timer2
+            interval: 120
+            repeat: true
+            running: true
+
+            onTriggered: mess_id.type()
+            onRunningChanged: running === false ? /*print("Stopped.")*/ null : null
+        }
+
+        Timer {
             id: close_timer
-            interval: 100
+            interval: 80
+            repeat: true
+//            running: true
+
+            onTriggered: mess_id.untype()
+            onRunningChanged: running === false ? /*print("Stopped.")*/ null : null
+        }
+        Timer {
+            id: close_timer2
+            interval: 80
             repeat: true
 //            running: true
 
@@ -56,7 +75,26 @@ Item {
             }
             mess_id.text = text;
         }
+        function type2() {
+            text = message.slice(0, ++i);
+            if (text === message) {
+                close_timer.running = true
+                return timer.stop()
+            }
+            mess_id.text = text;
+        }
         function untype() {
+            --j
+            text = message.slice(0, j)
+            print(j, message.length - j)
+            if (text === "") {
+                close_timer.running = true
+                return close_timer.stop()
+            }
+
+            mess_id.text = text;
+        }
+        function untype2() {
             --j
             text = message.slice(0, j)
             print(j, message.length - j)
