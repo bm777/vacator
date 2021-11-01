@@ -5,7 +5,7 @@ Rectangle {
     id: root
     width: parent.width * 0.82
     color: "transparent"
-    border.color: "red"
+//    border.color: "red"
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.topMargin: 10
     radius: 8
@@ -18,7 +18,7 @@ Rectangle {
     }
     Rectangle {
         anchors.fill: parent
-        color: "#363F60"
+        color: "#7564FB"
         radius: root.radius
     }
 }
