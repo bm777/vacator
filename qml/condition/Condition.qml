@@ -14,7 +14,7 @@ Rectangle {
         anchors.fill: root
         spread: 0.1
         glowRadius: root.radius
-        color: "#80000000"
+        color: "#000000"
     }
     Rectangle {
         anchors.fill: parent
