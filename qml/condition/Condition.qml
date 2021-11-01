@@ -1,4 +1,5 @@
 import QtQuick 2.0
+import QtGraphicalEffects 1.15
 
 Rectangle {
     id: root
@@ -8,4 +9,16 @@ Rectangle {
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.topMargin: 10
     radius: 8
+
+    RectangularGlow {
+        anchors.fill: root
+        spread: 0.1
+        glowRadius: root.radius
+        color: "#80000000"
+    }
+    Rectangle {
+        anchors.fill: parent
+        color: "#363F60"
+        radius: root.radius
+    }
 }
