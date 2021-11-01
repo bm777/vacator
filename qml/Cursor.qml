@@ -12,7 +12,7 @@ Item {
     property int j2: message2.length
     width: parent.width
     height: parent.height * 0.12
-    Rectangle {anchors.fill: parent; border.color: "red"; color: "transparent"}
+    Rectangle {anchors.fill: parent; border.color: "transparent"; color: "transparent"}
 
     Text {
         id: greating

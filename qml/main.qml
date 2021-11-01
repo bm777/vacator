@@ -62,7 +62,8 @@ Window {
         */
         Condition {
             id: condition
-            height: parent.height - cursor.height
+            height: parent.height * (1 - 0.2) / 2
+            anchors.top: cursor.bottom
 
         }
     }
