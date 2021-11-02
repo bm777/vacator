@@ -59,16 +59,19 @@ Rectangle {
             anchors.topMargin: 20
             width: parent.width * 0.4
             radius: 8
+            color: "#363F60"
 
             // text of town
             Text {
-                id: town
-                text: town
-                font{family: "Nunito"; pointSize: 18; bold: false}
+                id: place
+                text: root.town
+                font{family: "Nunito"; pointSize: 10; bold: true}
                 color: "#ffffff"
                 x: parent.width * 0.1
-                y: parent.height * 0.1
+                anchors.verticalCenter: parent.verticalCenter
+
             }
+
         }
     }
 }
