@@ -102,11 +102,7 @@ Rectangle {
 //                y: parent.height *
 
             }
-            Text {
-                anchors.top: encoded.bottom
-                anchors.horizontalCenter: parent.horizontalCenter
-                text: qsTr("text")
-            }
+
             RotationAnimation {
                 target: encoded
                 running: condition === "Sunny"
@@ -122,6 +118,14 @@ Rectangle {
                 cornerRadius: glowRadius
                 color: "#40F1C40F"
                 visible: condition === "Sunny"
+            }
+            Text {
+                anchors.top: encoded.bottom
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.topMargin: 15
+                text: condition
+                color: "#ffffff"
+                font{family: "Nunito"}
             }
         }
     }
