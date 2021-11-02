@@ -52,7 +52,7 @@ Rectangle {
 //            height: parent.height * 0.3
             wrapMode: Text.WordWrap
         }
-        Rectangle {
+        Rectangle {id: frame_text
             anchors.top: second_text.bottom
             x: first_text.x
             height: parent.height* 0.18
@@ -78,7 +78,15 @@ Rectangle {
                 height: parent.height * 0.7
                 width: height
             }
+        }
 
+        //// forcast condition
+        Rectangle {
+//            id: frame_condition
+            anchors.left: frame_text.right
+            width: parent.width - frame_text.width
+            height: parent.height * 0.8
+            y: first_text.y
         }
     }
 }
