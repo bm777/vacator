@@ -91,15 +91,24 @@ Rectangle {
             y: first_text.y
             color: "transparent"
 
-            Image {
+            Image {id: encoded
                 source: {
                     if(condition === "Sunny") return "../../img/sun.png"
                     else return "../../img/sun.png"
                 }
                 width: parent.width * 0.7
                 height: width
-                anchors.centerIn: parent
+                anchors.horizontalCenter: parent.horizontalCenter
+                y: parent.height * 0.1
 
+            }
+            RotationAnimation {
+                target: encoded
+                running: condition === "Sunny"
+                from: 0
+                to: 360
+                loops: Animation.Infinite
+                duration: 3000
             }
         }
     }
