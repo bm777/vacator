@@ -112,7 +112,7 @@ Rectangle {
             }
             RectangularGlow {
                 anchors.fill: encoded
-                spread: 0.1
+                spread: 0
                 glowRadius: encoded.width / 2
                 color: "#50F1C40F"
                 visible: condition === "Sunny"
