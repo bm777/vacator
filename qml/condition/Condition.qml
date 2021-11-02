@@ -44,7 +44,7 @@ Rectangle {
         }
         Text {
             id: second_text
-            text: qsTr("Did youb know that you can get perfect time for you vacation.")
+            text: qsTr("Did youb know you can get perfect time for you vacation.")
             font{family: "Nunito"; pointSize: 12; bold: false}
             color: "#ffffff"
             x: first_text.x
@@ -99,6 +99,7 @@ Rectangle {
                 width: parent.width * 0.7
                 height: width
                 anchors.centerIn: parent
+
             }
         }
     }
