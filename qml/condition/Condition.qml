@@ -71,6 +71,13 @@ Rectangle {
                 anchors.verticalCenter: parent.verticalCenter
 
             }
+            Image {
+                anchors.verticalCenter: parent.verticalCenter
+                x: parent.width - width * 1.7
+                source: "../../img/switch-town.png"
+                height: parent.height * 0.7
+                width: height
+            }
 
         }
     }
