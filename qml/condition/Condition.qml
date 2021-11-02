@@ -11,6 +11,7 @@ Rectangle {
     radius: 8
     property string town: "Washingtown"
     property string compared: "New York"
+    property string condition : "Sunny"
 
 //    RectangularGlow {
 //        anchors.fill: root
@@ -88,6 +89,12 @@ Rectangle {
             width: parent.width * 0.5 - 4
             height: parent.height * 0.8
             y: first_text.y
+
+            Image {
+                source: {
+
+                }
+            }
         }
     }
 }
