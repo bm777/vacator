@@ -99,7 +99,7 @@ Rectangle {
                 width: parent.width * 0.7
                 height: width
                 anchors.horizontalCenter: parent.horizontalCenter
-                y: parent.height * 0.1
+//                y: parent.height *
 
             }
             RotationAnimation {
@@ -109,6 +109,13 @@ Rectangle {
                 to: 360
                 loops: Animation.Infinite
                 duration: 3000
+            }
+            RectangularGlow {
+                anchors.fill: encoded
+                spread: 0.1
+                glowRadius: encoded.width / 2
+                color: "#50F1C40F"
+                visible: condition === "Sunny"
             }
         }
     }
