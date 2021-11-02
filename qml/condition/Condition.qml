@@ -9,6 +9,8 @@ Rectangle {
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.topMargin: 10
     radius: 8
+    property string town: "Washingtown"
+    property string compared: "New York"
 
 //    RectangularGlow {
 //        anchors.fill: root
@@ -57,6 +59,16 @@ Rectangle {
             anchors.topMargin: 20
             width: parent.width * 0.4
             radius: 8
+
+            // text of town
+            Text {
+                id: town
+                text: town
+                font{family: "Nunito"; pointSize: 18; bold: false}
+                color: "#ffffff"
+                x: parent.width * 0.1
+                y: parent.height * 0.1
+            }
         }
     }
 }
