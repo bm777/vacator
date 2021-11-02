@@ -89,11 +89,16 @@ Rectangle {
             width: parent.width * 0.5 - 4
             height: parent.height * 0.8
             y: first_text.y
+            color: "transparent"
 
             Image {
                 source: {
-
+                    if(condition === "Sunny") return "../../img/sun.png"
+                    else return "../../img/sun.png"
                 }
+                width: parent.width * 0.7
+                height: width
+                anchors.centerIn: parent
             }
         }
     }
