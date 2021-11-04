@@ -34,9 +34,10 @@ Rectangle {
         color: "transparent"
 
         Rectangle {id: dc
-            height: parent.height * 0.8
+            height: parent.height * 0.3
             width: height
             anchors.verticalCenter: parent.verticalCenter
+            x: parent.width * 0.1
         }
         Text {
             id: logomark
@@ -45,7 +46,7 @@ Rectangle {
             anchors.verticalCenter: parent.verticalCenter
             color: "#ffffff"
             anchors.left: dc.right
-            anchors.leftMargin: 0
+            anchors.leftMargin: 10
         }
     }
 
