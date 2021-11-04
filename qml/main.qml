@@ -32,7 +32,7 @@ Window {
     }
     Rectangle {
         anchors.fill: parent
-        color: "#e6F6F8"
+        color: "#f6F6F8"
         visible: !filter.dark
     }
 
