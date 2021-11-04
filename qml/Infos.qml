@@ -34,11 +34,11 @@ Rectangle {
             y: parent.height * 0.25
         }
         Text {
-            text: "°C"
+            text: "towns"
             font{family: "Nunito"; pointSize: 20}
             color: t.color //004DF7
-            x: t.x + t.width
-            y: parent.height * 0.27
+            x: t.x + t.width + 10
+            y: parent.height * 0.35
         }
 
         ////
