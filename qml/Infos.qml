@@ -53,11 +53,11 @@ Rectangle {
             id: logo
             width: parent.width
             height: width * 0.333
-    //        border.color: "red"
+            y: parent.height * 0.7
             color: "transparent"
 
             Image {id: dc
-                source: "../../img/dc.png"
+                source: "../img/dc.png"
                 height: parent.height * 0.8
                 width: height
                 anchors.verticalCenter: parent.verticalCenter
