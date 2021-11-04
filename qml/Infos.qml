@@ -6,8 +6,8 @@ Rectangle {
     width: parent.width * 0.35
     anchors.topMargin: 35
     radius: 10
-    property real temperature: 31
-    property string town: "Washingtown"
+    property real number: 12
+    property string town: ""
     color: "transparent"
 
 
@@ -28,10 +28,10 @@ Rectangle {
         }
 
         Text {id: t
-            text: temperature
+            text: number
             font{family: "Nunito"; pointSize: 40}
             color: "#7564FB" //004DF7
-            anchors.horizontalCenter: parent.horizontalCenter
+
             y: parent.height * 0.25
         }
         Text {
