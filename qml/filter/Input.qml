@@ -74,7 +74,7 @@ Rectangle {
     */
     TextField {id: content
         placeholderText: placeholder_text
-        color: dark ? "#f6f6f6" : "#7564FB"
+        color: dark ? "#f6f6f6" : "#f6f6f6"
         maximumLength: 20
         width: parent.width - (img_input.x+img_input.width + 5)
         font{family: f; pointSize: 12; bold: true}
