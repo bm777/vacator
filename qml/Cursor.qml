@@ -27,7 +27,7 @@ Item {
     Text {
         id: mess_id
 //        text: message
-        font{family: f; pointSize: 18}
+        font{family: f; pointSize: 15}
         x: parent.width * 0.1
         y: parent.height * 0.5
         color: "#80ffffff"

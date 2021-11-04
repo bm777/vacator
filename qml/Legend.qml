@@ -5,6 +5,7 @@ Rectangle {
     property string first: "first element LVP"
     property string second: "second element"
     color: "transparent"
+    property string f: "Comfortaa"
 
     Rectangle {
         id: first_rectangle
@@ -16,7 +17,7 @@ Rectangle {
 
         Text {id: content1
             text: first
-            font{family: "Nunito"; pointSize: 14; italic: true}
+            font{family: f; pointSize: 14; italic: true}
             color: "#40ffffff"
             anchors.verticalCenter: parent.verticalCenter
             x: first_rectangle.width * 2
@@ -35,7 +36,7 @@ Rectangle {
 
         Text {id: content2
             text: second
-            font{family: "Nunito"; pointSize: 14; italic: true}
+            font{family: f; pointSize: 14; italic: true}
             color: "#40ffffff"
             anchors.verticalCenter: parent.verticalCenter
             x: first_rectangle.width * 2
