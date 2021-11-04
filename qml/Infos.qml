@@ -53,7 +53,7 @@ Rectangle {
             id: logo
             width: parent.width
             height: width * 0.333
-            y: parent.height * 0.7
+            y: parent.height * 0.8
             color: "transparent"
 
             Image {id: dc
@@ -61,6 +61,7 @@ Rectangle {
                 height: parent.height * 0.8
                 width: height
                 anchors.verticalCenter: parent.verticalCenter
+                x: parent.width/2 - (width+logomark.width)/2
             }
             Text {
                 id: logomark
