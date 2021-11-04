@@ -29,12 +29,13 @@ Rectangle {
 
 
     //  vertical separator
-    Rectangle {
-        width: 1
-        height: parent.height
-        x: parent.width - width
-        color: "#4F557A"
-    }
+//    Rectangle {
+//        width: 1
+//        height: parent.height
+//        x: parent.width - width
+//        color: "#4F557A"
+//        visible: !dark
+//    }
 
     Rectangle {
         id: logo
