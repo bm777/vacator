@@ -9,6 +9,7 @@ Rectangle {
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.topMargin: 10
     radius: 8
+    property string f: "Comfortaa"
     property string town: "Washingtown"
     property string compared: "New York"
     property string condition : "Rainy" // Sunny Cloudy Rainy

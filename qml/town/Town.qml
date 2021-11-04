@@ -8,7 +8,7 @@ Rectangle {
     radius: 10
     property real temperature: 31
     property string town: "Washingtown"
-    property string f: "Compfortaa"
+    property string f: "Comfortaa"
 
     DropShadow {
         anchors.fill: parent

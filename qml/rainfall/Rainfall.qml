@@ -7,7 +7,7 @@ Rectangle {
     anchors.topMargin: 35
     radius: 10
     property real score: 0.4
-    property string f: "Compfortaa"
+    property string f: "Comfortaa"
 
     DropShadow {
         anchors.fill: parent
