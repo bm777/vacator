@@ -8,6 +8,7 @@ Rectangle {
     radius: 10
     property real temperature: 31
     property string town: "Washingtown"
+    color: "transparent"
 
 
     Rectangle {
