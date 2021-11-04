@@ -33,8 +33,7 @@ Rectangle {
 //        border.color: "red"
         color: "transparent"
 
-        Image {id: dc
-            source: "../../img/dc.png"
+        Rectangle {id: dc
             height: parent.height * 0.8
             width: height
             anchors.verticalCenter: parent.verticalCenter
