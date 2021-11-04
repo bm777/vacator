@@ -10,6 +10,7 @@ Rectangle {
     property string placeholder_text: ""
     property string img_src: ""
     property string plaintext: ""
+    property string f: "Comfortaa"
     property string indicator: ""
     property string warning: ""
     property string status: ""
@@ -74,7 +75,7 @@ Rectangle {
         color: "#f6f6f6"
         maximumLength: 20
         width: parent.width - (img_input.x+img_input.width + 5)
-        font{family: "Nunito"; pointSize: 12; bold: true}
+        font{family: f; pointSize: 12; bold: true}
         background: Rectangle {
             color: "transparent"
         }
@@ -97,7 +98,7 @@ Rectangle {
         y: parent.height - height - 1
         x: parent.width  * 0.3
         color: "#f6f6f6"
-        font{family: "Nunito"; pointSize: 8}
+        font{family: f; pointSize: 8}
     }
 
 
@@ -125,7 +126,7 @@ Rectangle {
             text: qsTr("x")
             anchors.centerIn: parent
             color: "#5E676E"
-            font{family: "Nunito"; pointSize: 15}
+            font{family: f; pointSize: 15}
         }
 
         MouseArea {
