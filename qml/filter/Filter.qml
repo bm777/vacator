@@ -38,13 +38,19 @@ Rectangle {
             width: height
             anchors.verticalCenter: parent.verticalCenter
             x: parent.width * 0.1
+            Rectangle {
+                anchors.centerIn: parent
+                width: parent.width * 0.5
+                height: width
+                radius: height/2
+            }
         }
         Text {
             id: logomark
-            text: qsTr("dClimate")
+            text: qsTr("vacator")
             font{family: "Nunito"; pointSize: 14; bold: true}
             anchors.verticalCenter: parent.verticalCenter
-            color: "#ffffff"
+            color: "#80ffffff"
             anchors.left: dc.right
             anchors.leftMargin: 10
         }
