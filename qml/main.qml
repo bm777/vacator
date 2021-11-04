@@ -23,6 +23,7 @@ Window {
         anchors.fill: parent
         start: Qt.point(0, 0)
         end: Qt.point(parent.width, 0)
+        visible: filter.dark
         gradient: Gradient {
             GradientStop {position: 0.0; color: filter.dark ? "#363F60" : "#F6F6F8"}
             GradientStop {position: 0.5; color: filter.dark ? "#323B5C" : "#F6F6F8"}
