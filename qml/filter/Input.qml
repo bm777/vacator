@@ -72,8 +72,8 @@ Rectangle {
     /*
         text of the input with value
     */
-    TextEdit {id: content
-//        placeholderText: placeholder_text
+    TextArea {id: content
+        placeholderText: placeholder_text
 //        displayText: placeholder_text
         color: dark ? "#f6f6f6" : "#7564FB"
 //        maximumLength: 20
