@@ -30,10 +30,10 @@ Rectangle {
             text: number
             font{family: "Nunito"; pointSize: 40}
             color: "#7564FB" //004DF7
-            x: 10
+            x: parent.width/2 - (width+t.width) /2
             y: parent.height * 0.25
         }
-        Text {
+        Text {id: t
             text: "towns"
             font{family: "Nunito"; pointSize: 20}
             color: t.color //004DF7
