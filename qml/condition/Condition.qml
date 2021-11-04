@@ -38,7 +38,7 @@ Rectangle {
         Text {
             id: first_text
             text: qsTr("Condition")
-            font{family: "Nunito"; pointSize: 18; bold: false}
+            font{family: f; pointSize: 18; bold: false}
             color: "#ffffff"
             x: parent.width * 0.1
             y: parent.height * 0.1
@@ -46,7 +46,7 @@ Rectangle {
         Text {
             id: second_text
             text: qsTr("Did you know you can get perfect time for your vacation.")
-            font{family: "Nunito"; pointSize: 10; bold: false}
+            font{family: f; pointSize: 10; bold: false}
             color: "#ffffff"
             x: first_text.x
             anchors.top: first_text.bottom
@@ -67,7 +67,7 @@ Rectangle {
             Text {
                 id: place
                 text: root.town
-                font{family: "Nunito"; pointSize: 10; bold: true}
+                font{family: f; pointSize: 10; bold: true}
                 color: "#ffffff"
                 x: parent.width * 0.1
                 anchors.verticalCenter: parent.verticalCenter
@@ -146,7 +146,7 @@ Rectangle {
                     if(condition==="Rainy") return "#ffffff"
                     return "#F1C40F"
                 }
-                font{family: "Nunito"}
+                font{family: f}
             }
         }
     }
