@@ -26,7 +26,7 @@ Rectangle {
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
-        Text {id: t
+        Text {id: num
             text: number
             font{family: "Nunito"; pointSize: 40}
             color: "#7564FB" //004DF7
@@ -36,8 +36,8 @@ Rectangle {
         Text {id: t
             text: "towns"
             font{family: "Nunito"; pointSize: 20}
-            color: t.color //004DF7
-            x: t.x + t.width + 10
+            color: num.color //004DF7
+            x: num.x + num.width + 10
             y: parent.height * 0.35
         }
 
