@@ -30,6 +30,11 @@ Window {
             GradientStop {position: 1.0; color: "#2E3859" }
         }
     }
+    Rectangle {
+        anchors.fill: parent
+        color: "#e6F6F8"
+        visible: !filter.dark
+    }
 
 
     /*
