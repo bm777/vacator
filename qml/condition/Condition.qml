@@ -11,7 +11,7 @@ Rectangle {
     radius: 8
     property string town: "Washingtown"
     property string compared: "New York"
-    property string condition : "Sunny"
+    property string condition : "Rainy" // Sunny Cloudy Rainy
 
 //    RectangularGlow {
 //        anchors.fill: root
@@ -44,8 +44,8 @@ Rectangle {
         }
         Text {
             id: second_text
-            text: qsTr("Did youb know you can get perfect time for you vacation.")
-            font{family: "Nunito"; pointSize: 12; bold: false}
+            text: qsTr("Did you know you can get perfect time for your vacation.")
+            font{family: "Nunito"; pointSize: 10; bold: false}
             color: "#ffffff"
             x: first_text.x
             anchors.top: first_text.bottom
@@ -57,7 +57,7 @@ Rectangle {
             anchors.top: second_text.bottom
             x: first_text.x
             height: parent.height* 0.18
-            anchors.topMargin: 20
+            anchors.topMargin: 40
             width: parent.width * 0.4
             radius: 8
             color: "#363F60"
@@ -76,14 +76,14 @@ Rectangle {
                 anchors.verticalCenter: parent.verticalCenter
                 x: parent.width - width * 1.7
                 source: "../../img/switch-town.png"
-                height: parent.height * 0.7
+                height: parent.height * 0.5
+                rotation: 90
                 width: height
             }
         }
 
         //// forcast condition
         Rectangle {
-//            id: frame_condition
             anchors.left: frame_text.right
             anchors.leftMargin: 4
             width: parent.width * 0.5 - 4
@@ -94,12 +94,21 @@ Rectangle {
             Image {id: encoded
                 source: {
                     if(condition === "Sunny") return "../../img/sun.png"
-                    else return "../../img/sun.png"
+                    if (condition === "Cloudy") return "../../img/cloud.png"
+                    return ""
                 }
                 width: parent.width * 0.7
                 height: width
                 anchors.horizontalCenter: parent.horizontalCenter
-//                y: parent.height *
+                visible: condition !== "Rainy"
+
+            }
+            AnimatedImage {
+                source: "../../img/rain.gif"
+                width: parent.width * 0.7
+                height: width
+                anchors.horizontalCenter: parent.horizontalCenter
+                visible: condition === "Rainy"
 
             }
 
@@ -116,15 +125,26 @@ Rectangle {
                 spread: 0
                 glowRadius: encoded.width / 2
                 cornerRadius: glowRadius
-                color: "#40F1C40F"
-                visible: condition === "Sunny"
+                color: {
+                    if(condition === "Sunny") return "#40F1C40F"
+                    if(condition === "Cloudy") return "#40ADD8E6"
+                    return "#40ADD8E6"
+                }
+                visible: condition === "Sunny" || condition === "Cloudy"
             }
             Text {
                 anchors.top: encoded.bottom
                 anchors.horizontalCenter: parent.horizontalCenter
-                anchors.topMargin: 15
+                anchors.topMargin: {
+                    if(condition==="Sunny") return 15
+                    return -10
+                }
                 text: condition
-                color: "#ffffff"
+                color: {
+                    if(condition==="Cloudy") return "#ffffff"
+                    if(condition==="Rainy") return "#ffffff"
+                    return "#F1C40F"
+                }
                 font{family: "Nunito"}
             }
         }

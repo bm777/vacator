@@ -4,7 +4,7 @@ Item {
     id: root
     property string welcome: "Hi,"
     property string message: "Welcome back :)            "
-    property string message2: "And enjoy with spot vacation finder.."
+    property string message2: "And enjoy with the spot vacation finder.."
     property bool active: false
     property int i: 0
     property int i2: 0
