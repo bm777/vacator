@@ -23,7 +23,6 @@ Rectangle {
             font{family: "Nunito"; pointSize:13}
             color: "#E8E8E8"
             y: 10
-            x: 10
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
@@ -31,7 +30,7 @@ Rectangle {
             text: number
             font{family: "Nunito"; pointSize: 40}
             color: "#7564FB" //004DF7
-
+            x: 10
             y: parent.height * 0.25
         }
         Text {
