@@ -62,7 +62,7 @@ Rectangle {
     */
     Image {
         id: img_input
-        source: img_src
+        source: root.dark ? img_src : "../../img/place.png"
         height: parent.height * 0.4
         width: height
         anchors.verticalCenter: parent.verticalCenter
