@@ -12,12 +12,13 @@ Item {
     property int j2: message2.length
     width: parent.width
     height: parent.height * 0.12
+    property string f: "Comfortaa"
     Rectangle {anchors.fill: parent; border.color: "transparent"; color: "transparent"}
 
     Text {
         id: greating
         text: welcome
-        font{family: "Nunito"; pointSize: 12}
+        font{family: f; pointSize: 12}
         x: parent.width * 0.1
         y: parent.height * 0.15
         color: "#70ffffff"
@@ -26,7 +27,7 @@ Item {
     Text {
         id: mess_id
 //        text: message
-        font{family: "Nunito"; pointSize: 18}
+        font{family: f; pointSize: 18}
         x: parent.width * 0.1
         y: parent.height * 0.5
         color: "#80ffffff"
