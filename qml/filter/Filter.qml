@@ -19,6 +19,16 @@ Rectangle {
         }
     }
 
+    DropShadow {
+        anchors.fill: parent
+        horizontalOffset: -5
+        verticalOffset: 5
+        radius: 20
+        samples: 25
+        color: "#000000"
+        source: main
+    }
+
     //  vertical separator
     Rectangle {
         width: 1
