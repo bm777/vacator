@@ -38,11 +38,13 @@ Rectangle {
             width: height
             anchors.verticalCenter: parent.verticalCenter
             x: parent.width * 0.1
+            radius: height/2
             Rectangle {
                 anchors.centerIn: parent
                 width: parent.width * 0.5
                 height: width
                 radius: height/2
+                color: "#7564FB"
             }
         }
         Text {
