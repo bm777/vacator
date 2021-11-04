@@ -14,8 +14,8 @@ Rectangle {
         start: Qt.point(0, 0)
         end: Qt.point(parent.width, 0)
         gradient: Gradient {
-            GradientStop {position: 0.0; color: "#52456B"}
-            GradientStop {position: 1.0; color: "#3D4162"}
+            GradientStop {position: 0.0; color: dark ? "#52456B" : "#ffffff"}
+            GradientStop {position: 1.0; color: dark ? "#3D4162" : "#ffffff"}
         }
     }
 
