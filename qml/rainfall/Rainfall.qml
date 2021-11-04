@@ -7,6 +7,7 @@ Rectangle {
     anchors.topMargin: 35
     radius: 10
     property real score: 0.4
+    property string f: "Compfortaa"
 
     DropShadow {
         anchors.fill: parent
@@ -27,7 +28,7 @@ Rectangle {
         Text {
             id: title__
             text: "Rainfall"
-            font{family: "Nunito"; pointSize:13}
+            font{family: f; pointSize:13}
             color: "#000000"
             y: 18
             x: 10
@@ -79,7 +80,7 @@ Rectangle {
             Text {
                 id: first_
                 text: "85"
-                font{family: "Nunito"; pointSize: 22; bold: false}
+                font{family:f; pointSize: 22; bold: false}
                 color: "#FCC304"  //#A7AFDF
                 x: 25
                 y: parent.height * 0.2
@@ -88,7 +89,7 @@ Rectangle {
                 text: "%"
                 anchors.left: first_.right
                 y: parent.height * 0.22
-                font{family: "Nunito"; pointSize: 12; bold: false}
+                font{family: f; pointSize: 12; bold: false}
                 color: first_.color
             }
             Rectangle {
@@ -96,14 +97,14 @@ Rectangle {
                 height: 1
                 color: "#4F557A"
                 x: first_.x + first_.width/2 - width/2
-                y: first_.y + first_.height
+                y: first_.y + first_.height + 5
             }
 
             ////
             Text {
                 id: second_
                 text: "38"
-                font{family: "Nunito"; pointSize: 14; bold: false}
+                font{family: f; pointSize: 14; bold: false}
                 color: "#80ffffff"  //#A7AFDF
                 x: first_.x + first_.width/2 - width/2
                 y: parent.height * 0.5
@@ -113,7 +114,7 @@ Rectangle {
                 y: second_.y + second_.height/2 - height/2
                 anchors.left: second_.right
                 anchors.topMargin: 0
-                font{family: "Nunito"; pointSize: 10; bold: false}
+                font{family: f; pointSize: 10; bold: false}
                 color: second_.color
             }
         }
