@@ -41,11 +41,11 @@ Rectangle {
             y: parent.height * 0.35
         }
         Text {
-            text: "available"
-            font{family: "Nunito"; pointSize: 20}
+            text: "(available)"
+            font{family: "Nunito"; pointSize: 14}
             color: "#40ffffff" //004DF7
             anchors.horizontalCenter: parent.horizontalCenter
-            y: parent.height * 0.55
+            y: parent.height * 0.52
         }
 
         ////
