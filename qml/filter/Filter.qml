@@ -38,6 +38,7 @@ Rectangle {
             width: height
             anchors.verticalCenter: parent.verticalCenter
             x: parent.width * 0.1
+            color: "#2E3859"
             radius: height/2
             Rectangle {
                 anchors.centerIn: parent
@@ -52,7 +53,7 @@ Rectangle {
             text: qsTr("vacator")
             font{family: "Nunito"; pointSize: 14; bold: true}
             anchors.verticalCenter: parent.verticalCenter
-            color: "#80ffffff"
+            color: "#a0ffffff"
             anchors.left: dc.right
             anchors.leftMargin: 10
         }
