@@ -9,16 +9,6 @@ Rectangle {
     property real temperature: 31
     property string town: "Washingtown"
 
-    DropShadow {
-        anchors.fill: parent
-        horizontalOffset: -5
-        verticalOffset: 5
-        radius: 20
-        samples: 25
-        color: "#000000"
-        source: main
-//        visible: false
-    }
 
     Rectangle {
         id: main
@@ -28,7 +18,7 @@ Rectangle {
 
         Text {
             id: title__
-            text: "Temeperature"
+            text: "Information"
             font{family: "Nunito"; pointSize:13}
             color: "#E8E8E8"
             y: 10
