@@ -8,6 +8,7 @@ Rectangle {
         property type name: value
     **/
     property string placeholder_text: ""
+    property bool dark: true
     property string img_src: ""
     property string plaintext: ""
     property string f: "Comfortaa"
@@ -72,12 +73,15 @@ Rectangle {
     */
     TextField {id: content
         placeholderText: placeholder_text
-        color: "#f6f6f6"
+        color: dark ? "#f6f6f6" : "#7564FB"
         maximumLength: 20
         width: parent.width - (img_input.x+img_input.width + 5)
         font{family: f; pointSize: 12; bold: true}
         background: Rectangle {
             color: "transparent"
+        }
+        Text {
+            text: parent.text
         }
         enabled: indicator !== "Date"
         selectByMouse: true
@@ -85,7 +89,6 @@ Rectangle {
         cursorVisible: false
         anchors.left: img_input.right
         y: parent.height * 0.5 - height * 0.6
-
 
     }
 
@@ -97,7 +100,7 @@ Rectangle {
         text: qsTr(indicator)
         y: parent.height - height - 1
         x: parent.width  * 0.3
-        color: "#f6f6f6"
+        color: dark ? "#f6f6f6" : "#7564FB"
         font{family: f; pointSize: 8}
     }
 

@@ -77,7 +77,7 @@ Rectangle {
         anchors.top: logo.bottom
         anchors.topMargin: 15
         x: parent.width * 0.16
-        color: dark ? "#b7b6e6" : "#a0000000"
+        color: dark ? "#b7b6e6" : "#000000"
         font{family: f; pointSize: 10}
     }
 
@@ -113,6 +113,7 @@ Rectangle {
         Behavior on color {
             PropertyAnimation{ duration: 500 }
         }
+        dark: dark
 
     }
 
@@ -125,6 +126,7 @@ Rectangle {
         placeholder_text: "Washingtown"
         img_src: "../../img/place-bold.png"
         indicator: "Comparison place"
+        dark: dark
 
         // colorAnimation
         Behavior on color {
