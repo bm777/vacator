@@ -50,10 +50,16 @@ Rectangle {
 
         ///
         Rectangle {
+            width: parent.width
+            height: 1
+            color: "#4F557A"
+        }
+
+        Rectangle {
             id: logo
             width: parent.width
             height: width * 0.333
-            y: parent.height * 0.8
+            y: parent.height * 0.95
             color: "transparent"
 
             Image {id: dc
