@@ -72,11 +72,11 @@ Rectangle {
     /*
         text of the input with value
     */
-    TextInput {id: content
+    TextEdit {id: content
 //        placeholderText: placeholder_text
 //        displayText: placeholder_text
         color: dark ? "#f6f6f6" : "#7564FB"
-        maximumLength: 20
+//        maximumLength: 20
         width: parent.width - (img_input.x+img_input.width + 5)
         font{family: f; pointSize: 12; bold: true}
 //        background: Rectangle {
