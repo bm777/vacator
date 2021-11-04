@@ -99,7 +99,7 @@ Rectangle {
         text: qsTr(indicator)
         y: parent.height - height - 1
         x: parent.width  * 0.3
-        color: dark ? "#f6f6f6" : "#7564FB"
+        color: dark ? "#f6f6f6" : "#f6f6f6"
         font{family: f; pointSize: 8}
     }
 
