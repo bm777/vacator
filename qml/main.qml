@@ -117,8 +117,8 @@ Window {
             anchors.horizontalCenter: parent.horizontalCenter
             y: parent.height * 0.14
         }
-        Town {
-            id: t
+        Infos {
+            id: infoss
             width: parent.width * 0.8
             height: parent.height * 0.37
             anchors.horizontalCenter: parent.horizontalCenter
