@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.0         // for textfield
+import QtQuick.Controls.Styles 1.4
 
 Rectangle {
     id: root
@@ -80,9 +81,10 @@ Rectangle {
         background: Rectangle {
             color: "transparent"
         }
-        Text {
-            text: parent.text
+        style: TextFieldStyle {
+            textColor: "red"
         }
+
         enabled: indicator !== "Date"
         selectByMouse: true
         clip: true
