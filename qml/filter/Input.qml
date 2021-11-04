@@ -50,7 +50,7 @@ Rectangle {
     /**
         rectangle properties
     **/
-    color: dark ? "transparent" : "#363F60"
+    color: root.dark ? "transparent" : "#C2CED3"
     border.color: "#807564FB"
     radius: height * 0.25
     width: parent.width * 0.88
