@@ -13,7 +13,7 @@ Item {
     width: parent.width
     height: parent.height * 0.12
     property string f: "Comfortaa"
-    Rectangle {anchors.fill: parent; /*border.color: "transparent";*/ color: "transparent"}
+    Rectangle {anchors.fill: parent; border.color: "transparent"; color: "transparent"}
 
     Text {
         id: greating
