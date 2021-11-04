@@ -12,7 +12,7 @@ if __name__ == "__main__":
     app = QGuiApplication(sys.argv)
     engine = QQmlApplicationEngine()
 
-    font = os.path.join(CURRENT_DIRECTORY, "font", "Nunito/Nunito-Regular.ttf")
+    font = os.path.join(CURRENT_DIRECTORY, "font", "Comfortaa/Comfortaa-Regular.ttf")
     _id = QFontDatabase.addApplicationFont(font)
 
     engine.load(os.path.join(os.path.dirname(__file__), "qml/main.qml"))

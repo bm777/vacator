@@ -20,7 +20,7 @@ Rectangle {
         Text {
             id: title__
             text: "Information"
-            font{family: "Nunito"; pointSize:13}
+            font{family: "Comfortaa"; pointSize:13}
             color: "#E8E8E8"
             y: 10
             anchors.horizontalCenter: parent.horizontalCenter
