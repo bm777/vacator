@@ -49,7 +49,29 @@ Rectangle {
         }
 
         ///
+        Rectangle {
+            id: logo
+            width: parent.width
+            height: width * 0.333
+    //        border.color: "red"
+            color: "transparent"
 
+            Image {id: dc
+                source: "../../img/dc.png"
+                height: parent.height * 0.8
+                width: height
+                anchors.verticalCenter: parent.verticalCenter
+            }
+            Text {
+                id: logomark
+                text: qsTr("dClimate")
+                font{family: "Nunito"; pointSize: 14; bold: true}
+                anchors.verticalCenter: parent.verticalCenter
+                color: "#ffffff"
+                anchors.left: dc.right
+                anchors.leftMargin: 0
+            }
+        }
 
     }
 }
