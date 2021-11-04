@@ -9,6 +9,7 @@ Rectangle {
     property real number: 12
     property string town: ""
     color: "transparent"
+    property string f: "Comfortaa"
 
 
     Rectangle {
@@ -20,7 +21,7 @@ Rectangle {
         Text {
             id: title__
             text: "Information"
-            font{family: "Comfortaa"; pointSize:13}
+            font{family: f; pointSize:13}
             color: "#E8E8E8"
             y: 10
             anchors.horizontalCenter: parent.horizontalCenter
@@ -28,7 +29,7 @@ Rectangle {
 
         Text {id: num
             text: number
-            font{family: "Nunito"; pointSize: 40}
+            font{family: f; pointSize: 40}
             color: "#7564FB" //004DF7
             x: parent.width/2 - (width+t.width) /2
             y: parent.height * 0.4
@@ -42,7 +43,7 @@ Rectangle {
         }
         Text {
             text: "(available)"
-            font{family: "Nunito"; pointSize: 14}
+            font{family: f; pointSize: 14}
             color: "#40ffffff" //004DF7
             anchors.horizontalCenter: parent.horizontalCenter
             y: parent.height * 0.67
@@ -73,7 +74,7 @@ Rectangle {
             Text {
                 id: logomark
                 text: qsTr("dClimate")
-                font{family: "Nunito"; pointSize: 14; bold: true}
+                font{family: f; pointSize: 14; bold: true}
                 anchors.verticalCenter: parent.verticalCenter
                 color: "#ffffff"
                 anchors.left: dc.right
