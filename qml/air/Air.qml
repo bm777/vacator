@@ -7,6 +7,7 @@ Rectangle {
     anchors.topMargin: 35
     radius: 10
     property real score: 0.8
+    property string f: "Compfortaa"
 
     DropShadow {
         anchors.fill: parent
@@ -27,7 +28,7 @@ Rectangle {
         Text {
             id: title__
             text: "Air Quality"
-            font{family: "Nunito"; pointSize:13}
+            font{family: f; pointSize:13}
             color: "#B5BBCE"
             anchors.left: img.right
             y: img.y + img.height/2 - height/2
@@ -77,7 +78,7 @@ Rectangle {
             id: first_
             text: "85"
             anchors.top: bord.bottom
-            font{family: "Nunito"; pointSize: 22; bold: false}
+            font{family: f; pointSize: 22; bold: false}
             color: "#FCC304"  //#A7AFDF
             anchors.topMargin: 30
             x: parent.width * 0.3
@@ -88,14 +89,14 @@ Rectangle {
             anchors.top: bord.bottom
             anchors.left: first_.right
             anchors.topMargin: 35
-            font{family: "Nunito"; pointSize: 12; bold: false}
+            font{family: f; pointSize: 12; bold: false}
             color: first_.color
         }
 
         Text {
             id: second_
             text: "45"
-            font{family: "Nunito"; pointSize: 14; bold: false}
+            font{family: f; pointSize: 14; bold: false}
             color: "#80ffffff"
             x: parent.width * 0.65
             y: first_.y + first_.height/2 - height/2
@@ -106,7 +107,7 @@ Rectangle {
             y: second_.y + second_.height/2 - height/2
             anchors.left: second_.right
             anchors.topMargin: 0
-            font{family: "Nunito"; pointSize: 10; bold: false}
+            font{family: f; pointSize: 10; bold: false}
             color: second_.color
         }
     }
