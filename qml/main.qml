@@ -24,11 +24,12 @@ Window {
         start: Qt.point(0, 0)
         end: Qt.point(parent.width, 0)
         gradient: Gradient {
-            GradientStop {position: 0.0; color: "#363F60"}
+            GradientStop {position: 0.0; color: filter.dark ? "#363F60" : "#F6F6F8"}
             GradientStop {position: 0.5; color: "#323B5C"}
             GradientStop {position: 1.0; color: "#2E3859"}
         }
     }
+
 
     /*
         filter
