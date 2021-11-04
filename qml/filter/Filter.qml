@@ -9,6 +9,13 @@ Rectangle {
     property bool dark: true
     property string f: "Comfortaa"
 
+    RectangularGlow {
+        anchors.fill: root
+        spread: 0.1
+        glowRadius: 10
+        color: "#80000000"
+    }
+
     LinearGradient {
         anchors.fill: parent
         start: Qt.point(0, 0)
@@ -19,12 +26,7 @@ Rectangle {
         }
     }
 
-    RectangularGlow {
-        anchors.fill: root
-        spread: 0.1
-        glowRadius: 10
-        color: "#a0a9a9a9"
-    }
+
 
     //  vertical separator
     Rectangle {
