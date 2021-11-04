@@ -48,21 +48,7 @@ Rectangle {
             y: parent.height * 0.52
         }
 
-        ////
-        Rectangle {
-            width: parent.width * 0.7
-            height: 20
-            radius: height/2
-            anchors.horizontalCenter: parent.horizontalCenter
-            y: parent.height - height * 2
-            color: "#7564FB"
-            Text {
-                text: town
-                font{family: "Nunito"; pointSize: 10}
-                anchors.centerIn: parent
-                color: "#2E3859"
-            }
-        }
+        ///
 
 
     }
