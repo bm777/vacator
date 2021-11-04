@@ -113,7 +113,7 @@ Rectangle {
         Behavior on color {
             PropertyAnimation{ duration: 500 }
         }
-        dark: dark
+        dark: root.dark
 
     }
 
@@ -126,7 +126,7 @@ Rectangle {
         placeholder_text: "Washingtown"
         img_src: "../../img/place-bold.png"
         indicator: "Comparison place"
-        dark: dark
+        dark: root.dark
 
         // colorAnimation
         Behavior on color {
