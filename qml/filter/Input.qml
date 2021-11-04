@@ -119,6 +119,8 @@ Rectangle {
         visible:  {
             if(!(content.text == "")) {
                 root.color = "#7564FB"
+            }else if(!root.dark && content.text == ""){
+                root.color = "#C2CED3"
             }else root.color = "transparent"
 
             return !(content.text == "")
