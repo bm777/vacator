@@ -31,14 +31,14 @@ Rectangle {
             font{family: "Nunito"; pointSize: 40}
             color: "#7564FB" //004DF7
             x: parent.width/2 - (width+t.width) /2
-            y: parent.height * 0.25
+            y: parent.height * 0.4
         }
         Text {id: t
             text: "towns"
             font{family: "Nunito"; pointSize: 20}
             color: num.color //004DF7
             x: num.x + num.width + 10
-            y: parent.height * 0.35
+            y: parent.height * 0.48
         }
         Text {
             text: "(available)"
@@ -53,6 +53,7 @@ Rectangle {
             width: parent.width
             height: 1
             color: "#4F557A"
+            y: parent.height * 0.9
         }
 
         Rectangle {
