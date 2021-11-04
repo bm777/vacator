@@ -13,6 +13,7 @@ Rectangle {
     property string warning: ""
     property string status: ""
     property real distance: 20
+    property string f: "Comfortaa"
     signal click
 
     /**
@@ -53,7 +54,7 @@ Rectangle {
         color: "#f6f6f6"
         maximumLength: 20
         width: parent.width - (img_input.x+img_input.width + 5)
-        font{family: "Nunito"; pointSize: 12; bold: true}
+        font{family: f; pointSize: 12; bold: true}
         background: Rectangle { color: "transparent" }
         enabled: indicator !== "Date"
         selectByMouse: true
@@ -81,7 +82,7 @@ Rectangle {
         y: parent.height - height - 1
         x: parent.width  * 0.3
         color: "#f6f6f6"
-        font{family: "Nunito"; pointSize: 8}
+        font{family: f; pointSize: 8}
     }
 
 

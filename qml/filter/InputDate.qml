@@ -5,6 +5,7 @@ Rectangle {
     id: root
     color: "transparent"
     property string scheduled: day.model[day.currentIndex]
+    property string f: "Comfortaa"
     property string date_: {
         var index_day = day.currentIndex
 
@@ -44,6 +45,7 @@ Rectangle {
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             font.pixelSize: fontMetrics.font.pixelSize * 1
+            font.family: f
             color: "#BCC2D0"
            }
         }
@@ -105,7 +107,7 @@ Rectangle {
                 anchors.centerIn: parent
                 text: "save"
                 color: "#ffffff"
-                font{pointSize: 12; family: "Nunito"}
+                font{pointSize: 12; family: f}
             }
             MouseArea {
                 anchors.fill: parent

@@ -7,6 +7,7 @@ Rectangle {
     width: parent.width * 0.23
     height: parent.height
     property bool dark: true
+    property string f: "Comfortaa"
 
     LinearGradient {
         anchors.fill: parent
@@ -51,7 +52,7 @@ Rectangle {
         Text {
             id: logomark
             text: qsTr("vacator")
-            font{family: "Nunito"; pointSize: 14; bold: true}
+            font{family: f; pointSize: 14; bold: true}
             anchors.verticalCenter: parent.verticalCenter
             color: "#a0ffffff"
             anchors.left: dc.right
@@ -67,7 +68,7 @@ Rectangle {
         anchors.topMargin: 15
         x: parent.width * 0.16
         color: "#b7b6e6"
-        font{family: "Nunito"; pointSize: 10}
+        font{family: f; pointSize: 10}
     }
 
 //    /*
@@ -185,7 +186,7 @@ Rectangle {
         Text {
             id: center
             text: dark ? "Dark" : "Light"
-            font{family: "Nunito"; pointSize: 12}
+            font{family: f; pointSize: 12}
             color: "#FCC304"
             anchors.verticalCenter: parent.verticalCenter
             x: dark ? frame.width * 0.2 : frame.width * 0.8 - width
