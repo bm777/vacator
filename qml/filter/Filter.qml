@@ -64,7 +64,7 @@ Rectangle {
             text: qsTr("vacator")
             font{family: f; pointSize: 14; bold: true}
             anchors.verticalCenter: parent.verticalCenter
-            color: "#a0ffffff"
+            color: dark ? "#a0ffffff" : "#a0000000"
             anchors.left: dc.right
             anchors.leftMargin: 10
         }
