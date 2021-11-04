@@ -40,6 +40,13 @@ Rectangle {
             x: num.x + num.width + 10
             y: parent.height * 0.35
         }
+        Text {
+            text: "data available"
+            font{family: "Nunito"; pointSize: 20}
+            color: num.color //004DF7
+            x: num.x + num.width + 10
+            y: parent.height * 0.35
+        }
 
         ////
         Rectangle {
