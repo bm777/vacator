@@ -13,7 +13,7 @@ Rectangle {
         anchors.fill: root
         spread: 0.1
         glowRadius: 10
-        color: "#80000000"
+        color: dark ? "#80000000" : "#a0a9a9a9"
     }
 
     LinearGradient {
