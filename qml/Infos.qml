@@ -38,14 +38,14 @@ Rectangle {
             font{family: "Nunito"; pointSize: 20}
             color: num.color //004DF7
             x: num.x + num.width + 10
-            y: parent.height * 0.48
+            y: parent.height * 0.5
         }
         Text {
             text: "(available)"
             font{family: "Nunito"; pointSize: 14}
             color: "#40ffffff" //004DF7
             anchors.horizontalCenter: parent.horizontalCenter
-            y: parent.height * 0.52
+            y: parent.height * 0.67
         }
 
         ///
