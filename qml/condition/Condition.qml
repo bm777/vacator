@@ -47,7 +47,7 @@ Rectangle {
         Text {
             id: second_text
             text: qsTr("Did you know you can get perfect time for your vacation.")
-            font{family: f; pointSize: 9; bold: false}
+            font{family: f; pointSize: 10; bold: false}
             color: dark ? "#ffffff" : "#000000"
             x: first_text.x
             anchors.top: first_text.bottom

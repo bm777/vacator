@@ -28,7 +28,7 @@ Rectangle {
         Text {
             id: title__
             text: "Air Quality"
-            font{family: f; pointSize:13}
+            font{family: f; pointSize:10}
             color: "#B5BBCE"
             anchors.left: img.right
             y: img.y + img.height/2 - height/2
@@ -37,7 +37,7 @@ Rectangle {
 
         Image {id: img
             source: "../../img/air.png"
-            width: 35
+            width: 30
             height: width
             y: 10
             x: 10
