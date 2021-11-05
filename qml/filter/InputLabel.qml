@@ -15,6 +15,7 @@ Rectangle {
     property real distance: 20
     property string f: "Comfortaa"
     signal click
+    property bool dark: true
 
     /**
         JS function to reset data on the input field
@@ -85,39 +86,6 @@ Rectangle {
         font{family: f; pointSize: 8}
     }
 
-
-    /*
-        reset Button
-    */
-//    Rectangle {
-//        id: set
-//        height: parent.height * 0.6
-//        width: height
-//        radius: height/2
-//        color: "#C2CED3"
-//        anchors.bottom: root.top
-//        anchors.bottomMargin: root.radius/2
-//        x: parent.width - width
-//        visible:  {
-//            if(!(content.text == "")) {
-//                root.color = "#7564FB"
-//            }else root.color = "transparent"
-
-//            return !(content.text == "")
-//        }
-
-//        Text {
-//            text: qsTr("x")
-//            anchors.centerIn: parent
-//            color: "#5E676E"
-//            font{family: "Nunito"; pointSize: 15}
-//        }
-
-//        MouseArea {
-//            anchors.fill: parent
-//            onClicked: content.text = ""
-//        }
-//    }
 
     ColorAnimation on color {
         duration: 1000

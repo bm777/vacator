@@ -143,7 +143,7 @@ Rectangle {
         placeholder_text: "Today"
         img_src: "../../img/calendar-bold.png"
         indicator: "Date"
-
+        dark: root.dark
         Behavior on color {
             PropertyAnimation{ duration: 500 }
         }
