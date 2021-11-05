@@ -122,9 +122,11 @@ Rectangle {
             }else if(!root.dark && content.text == ""){
                 root.color = "#C2CED3"
                 content.color = "#000000"
+                label.color = "#000000"
             }else {
                 root.color = "transparent"
                 content.color = "#f6f6f6"
+                label.color = "#f6f6f6"
             }
 
             return !(content.text == "")
