@@ -12,7 +12,7 @@ Rectangle {
     property string f: "Comfortaa"
     property string town: "Washingtown"
     property string compared: "New York"
-    property string condition : "Rainy" // Sunny Cloudy Rainy
+    property string condition : "Sunny" // Sunny Cloudy Rainy
 
 //    RectangularGlow {
 //        anchors.fill: root
@@ -145,7 +145,7 @@ Rectangle {
                 color: {
                     if(condition==="Cloudy") return dark ? "#ffffff" : "#000000"
                     if(condition==="Rainy") return dark ? "#ffffff" : "#000000"
-                    return dark ? "#F1C40F" : "#000000"
+                    return dark ? "#F1C40F" : "#F1C40F"
                 }
                 font{family: f}
             }
