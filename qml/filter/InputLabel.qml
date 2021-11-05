@@ -28,7 +28,8 @@ Rectangle {
         rectangle properties
     **/
     color: {
-       if(content.text == "" && root.dark) return "#7564FB"
+       if(content.text !== "" && root.dark) return "#7564FB"
+//       else if(content.text == "" && !root.dark) return "#7564FB"
        else return "#363F60"
    }
 
