@@ -27,7 +27,11 @@ Rectangle {
     /**
         rectangle properties
     **/
-    color: content.text =="" ? "transparent" : "#7564FB"
+    color: {
+       if(content.text == "" && root.dark) return "#7564FB"
+       else return "#363F60"
+   }
+
     border.color: "#7564FB"
     radius: height * 0.25
     width: parent.width * 0.88
