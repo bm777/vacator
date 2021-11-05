@@ -28,7 +28,7 @@ Rectangle {
         Text {
             id: title__
             text: "Rainfall"
-            font{family: f; pointSize:13}
+            font{family: f; pointSize:10}
             color: "#000000"
             y: 18
             x: 10
