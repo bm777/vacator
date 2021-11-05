@@ -6,6 +6,7 @@ Item {
     property string message: "Welcome back :)            "
     property string message2: "And enjoy with the spot vacation finder.."
     property bool active: false
+    property bool dark: true
     property int i: 0
     property int i2: 0
     property int j: message.length
@@ -21,7 +22,7 @@ Item {
         font{family: f; pointSize: 12}
         x: parent.width * 0.1
         y: parent.height * 0.15
-        color: "#70ffffff"
+        color: dark ? "#70ffffff" : "#70000000"
     }
 
     Text {
