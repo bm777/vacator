@@ -31,7 +31,7 @@ Item {
         font{family: f; pointSize: 15}
         x: parent.width * 0.1
         y: parent.height * 0.5
-        color: "#80ffffff"
+        color: dark ? "#80ffffff" : "#80000000"
 
         Timer {
             id: timer
@@ -106,7 +106,7 @@ Item {
         height: mess_id.height * 0.8
         x: mess_id.x+ mess_id.width + 2
         y: mess_id.y + mess_id.height/2 - height/2
-
+        color: dark ? "#ffffff" : "#000000"
     }
 
 
