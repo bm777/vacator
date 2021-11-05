@@ -64,7 +64,7 @@ Window {
         */
         Cursor {
             id: cursor
-
+            dark: filter.dark
 
         }
 
