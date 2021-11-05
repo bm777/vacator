@@ -120,7 +120,7 @@ Rectangle {
             if(!(content.text == "")) {
                 root.color = "#7564FB"
             }else if(!root.dark && content.text == ""){
-                root.color = "#C2CED3"
+//                root.color = "#C2CED3"
                 content.color = "#000000"
                 label.color = "#000000"
             }else {
