@@ -33,7 +33,7 @@ Rectangle {
     Rectangle {
         id: main
         anchors.fill: parent
-        color: "#7564FB"
+        color: dark ? "#7564FB" : "#ffffff"
         radius: root.radius
 
         Text {
