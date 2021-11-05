@@ -121,6 +121,7 @@ Rectangle {
                 root.color = "#7564FB"
             }else if(!root.dark && content.text == ""){
                 root.color = "#C2CED3"
+                content.color = "red"
             }else root.color = "transparent"
 
             return !(content.text == "")
