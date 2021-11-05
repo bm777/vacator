@@ -30,7 +30,7 @@ Rectangle {
         Text {
             id: title__
             text: "Temperature"
-            font{family: f; pointSize:13}
+            font{family: f; pointSize:10}
             color: "#E8E8E8"
             y: 10
             x: 10

@@ -17,7 +17,7 @@ Rectangle {
 
         Text {id: content1
             text: first
-            font{family: f; pointSize: 14; italic: true}
+            font{family: f; pointSize: 12; italic: true}
             color: "#40ffffff"
             anchors.verticalCenter: parent.verticalCenter
             x: first_rectangle.width * 2
@@ -36,7 +36,7 @@ Rectangle {
 
         Text {id: content2
             text: second
-            font{family: f; pointSize: 14; italic: true}
+            font{family: f; pointSize: 12; italic: true}
             color: "#40ffffff"
             anchors.verticalCenter: parent.verticalCenter
             x: first_rectangle.width * 2
