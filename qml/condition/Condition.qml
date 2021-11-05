@@ -40,7 +40,7 @@ Rectangle {
             id: first_text
             text: qsTr("Condition")
             font{family: f; pointSize: 18; bold: false}
-            color: "#ffffff"
+            color: dark ? "#ffffff" : "#000000"
             x: parent.width * 0.1
             y: parent.height * 0.1
         }
@@ -48,7 +48,7 @@ Rectangle {
             id: second_text
             text: qsTr("Did you know you can get perfect time for your vacation.")
             font{family: f; pointSize: 10; bold: false}
-            color: "#ffffff"
+            color: dark ? "#ffffff" : "#000000"
             x: first_text.x
             anchors.top: first_text.bottom
             width: parent.width * 0.45
@@ -69,7 +69,7 @@ Rectangle {
                 id: place
                 text: root.town
                 font{family: f; pointSize: 10; bold: true}
-                color: "#ffffff"
+                color: dark ? "#ffffff" : "#000000"
                 x: parent.width * 0.1
                 anchors.verticalCenter: parent.verticalCenter
 
