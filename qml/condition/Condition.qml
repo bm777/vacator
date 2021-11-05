@@ -5,7 +5,7 @@ Rectangle {
     id: root
     width: parent.width * 0.8
     color: "transparent"
-//    border.color: "red"
+    property bool dark: true
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.topMargin: 10
     radius: 8
@@ -28,6 +28,7 @@ Rectangle {
         samples: 25
         color: "#000000"
         source: main
+        visible: dark
     }
     Rectangle {
         id: main
