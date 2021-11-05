@@ -69,7 +69,7 @@ Rectangle {
                 id: place
                 text: root.town
                 font{family: f; pointSize: 10; bold: true}
-                color: dark ? "#ffffff" : "#000000"
+                color: "#ffffff"
                 x: parent.width * 0.1
                 anchors.verticalCenter: parent.verticalCenter
 
@@ -143,9 +143,9 @@ Rectangle {
                 }
                 text: condition
                 color: {
-                    if(condition==="Cloudy") return "#ffffff"
-                    if(condition==="Rainy") return "#ffffff"
-                    return "#F1C40F"
+                    if(condition==="Cloudy") return dark ? "#ffffff" : "#000000"
+                    if(condition==="Rainy") return dark ? "#ffffff" : "#000000"
+                    return dark ? "#F1C40F" : "#000000"
                 }
                 font{family: f}
             }
