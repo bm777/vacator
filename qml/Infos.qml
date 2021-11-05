@@ -21,7 +21,7 @@ Rectangle {
         Text {
             id: title__
             text: "Information"
-            font{family: f; pointSize:13}
+            font{family: f; pointSize:10}
             color: "#E8E8E8"
             y: 10
             anchors.horizontalCenter: parent.horizontalCenter
@@ -32,14 +32,14 @@ Rectangle {
             font{family: f; pointSize: 40}
             color: "#7564FB" //004DF7
             x: parent.width/2 - (width+t.width) /2
-            y: parent.height * 0.4
+            y: parent.height * 0.35
         }
         Text {id: t
             text: "towns"
             font{family: "Nunito"; pointSize: 20}
             color: num.color //004DF7
             x: num.x + num.width + 10
-            y: parent.height * 0.5
+            y: parent.height * 0.43
         }
         Text {
             text: "(available)"
