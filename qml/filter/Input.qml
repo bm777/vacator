@@ -74,7 +74,7 @@ Rectangle {
     */
     TextField {id: content
         placeholderText: placeholder_text
-        color: dark ? "#f6f6f6" : "#f6f6f6"
+        color:"#f6f6f6"
         maximumLength: 20
         width: parent.width - (img_input.x+img_input.width + 5)
         font{family: f; pointSize: 12; bold: true}
@@ -122,7 +122,10 @@ Rectangle {
             }else if(!root.dark && content.text == ""){
                 root.color = "#C2CED3"
                 content.color = "red"
-            }else root.color = "transparent"
+            }else {
+                root.color = "transparent"
+                content.color = "#f6f6f6"
+            }
 
             return !(content.text == "")
         }
