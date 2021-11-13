@@ -31,7 +31,9 @@ Rectangle {
             font{family: f; pointSize:10}
             color: "#000000"
             y: 18
-            x: 10
+//            x: 10
+            anchors.left: img.right
+            anchors.leftMargin: 5
         }
 
         Image {id: img
