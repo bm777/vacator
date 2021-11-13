@@ -54,7 +54,7 @@ Rectangle {
 
 
             Rectangle {
-                anchors.verticalCenter: parent.verticalCenter
+                y: parent.height / 2 - height/2
                 height: parent.height * 0.7
                 width: 25
                 radius: width/2
