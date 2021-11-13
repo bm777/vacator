@@ -93,7 +93,8 @@ Rectangle {
 //        y:  parent.height * 0.6// parent.height - height * 4
         color: frame.color
         radius: height * 0.25
-
+        border.width: 1
+        border.color: "transparent"
         Text {
             text: "Sort out"
             font{family: "Nunito"; pointSize: 14}
