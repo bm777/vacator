@@ -91,7 +91,7 @@ Rectangle {
         anchors.top: compare.bottom
         anchors.topMargin: 15
 //        y:  parent.height * 0.6// parent.height - height * 4
-        color: frame.color
+        color: dark ? frame.color : "lightblue"
         radius: height * 0.25
         border.width: 1
         border.color: "transparent"
@@ -99,7 +99,7 @@ Rectangle {
             text: "Sort out"
             font{family: "Nunito"; pointSize: 14}
             anchors.centerIn: parent
-            color: "#FCC304"
+            color: dark ? "#FCC304" : "black"
         }
 
         MouseArea {
