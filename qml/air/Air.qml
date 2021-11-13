@@ -7,7 +7,7 @@ Rectangle {
     anchors.topMargin: 35
     radius: 10
     property bool dark: true
-    property real score: 0.8
+    property real score: 0.85
     property string f: "Comfortaa"
 
     DropShadow {
@@ -93,7 +93,7 @@ Rectangle {
                 font{family: f; pointSize: 22; bold: false}
                 color: "#FCC304"  //#A7AFDF
                 anchors.topMargin: 30
-                x: parent.width * 0.3
+                x: parent.width * 0.25
             }
 
             Text {
@@ -110,7 +110,7 @@ Rectangle {
                 text: "45"
                 font{family: f; pointSize: 14; bold: false}
                 color: "#80ffffff"
-                x: parent.width * 0.65
+                x: parent.width * 0.6
                 y: first_.y + first_.height/2 - height/2
             }
 

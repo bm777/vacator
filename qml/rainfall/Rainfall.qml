@@ -7,7 +7,7 @@ Rectangle {
     anchors.topMargin: 35
     radius: 10
     property bool dark: true
-    property real score: 0.4
+    property real score: 0.85
     property string f: "Comfortaa"
 
     DropShadow {
