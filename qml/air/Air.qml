@@ -6,6 +6,7 @@ Rectangle {
     width: parent.width * 0.35
     anchors.topMargin: 35
     radius: 10
+    property bool dark: true
     property real score: 0.8
     property string f: "Comfortaa"
 

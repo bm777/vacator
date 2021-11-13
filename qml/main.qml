@@ -86,6 +86,7 @@ Window {
             height: parent.height * 0.37
             anchors.top: condition.bottom
             x: condition.x
+            dark: filter.dark
         }
         /*
             air
@@ -96,6 +97,7 @@ Window {
             anchors.top: condition.bottom
             anchors.left: air.right
             anchors.leftMargin: (parent.width - width*2 - air.x)/2
+            dark: filter.dark
         }
 
         /*

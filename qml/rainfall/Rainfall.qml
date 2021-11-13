@@ -6,6 +6,7 @@ Rectangle {
     width: parent.width * 0.35
     anchors.topMargin: 35
     radius: 10
+    property bool dark: true
     property real score: 0.4
     property string f: "Comfortaa"
 
@@ -29,7 +30,7 @@ Rectangle {
             id: title__
             text: "Rainfall"
             font{family: f; pointSize:10}
-            color: "#000000"
+            color: dark ? "#B5BBCE" : "#000000"
             y: 18
 //            x: 10
             anchors.left: img.right
@@ -54,13 +55,13 @@ Rectangle {
 
 
             Rectangle {
-                y: parent.height / 2 - height/2
+                y: parent.height / 2 - height/2 - 10
                 height: parent.height * 0.7
                 width: 25
                 radius: width/2
                 border.color: "#4F557A"
                 color: "transparent"
-                x: parent.width - width * 1.5
+                x: parent.width - width * 1.7
                 Rectangle{
                     anchors.centerIn: parent
                     width: parent.width
@@ -84,7 +85,7 @@ Rectangle {
                 text: "85"
                 font{family:f; pointSize: 22; bold: false}
                 color: "#FCC304"  //#A7AFDF
-                x: 25
+                x: 40
                 y: parent.height * 0.2
             }
             Text {
