@@ -12,7 +12,7 @@ Rectangle {
     property string f: "Comfortaa"
     property string town: "Washingtown"
     property string compared: "New York"
-    property string condition : "Sunny" // Sunny Cloudy Rainy
+    property string condition : "Rainy" // Sunny Cloudy Rainy
 
 //    RectangularGlow {
 //        anchors.fill: root
@@ -26,7 +26,7 @@ Rectangle {
         verticalOffset: 5
         radius: 20
         samples: 25
-        color: "#000000"
+        color: "#80000000"
         source: main
         visible: dark
     }

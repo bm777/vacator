@@ -81,23 +81,34 @@ Rectangle {
         font{family: f; pointSize: 10}
     }
 
-//    /*
-//        submit button
-//    */
-//    Rectangle {
-//        width: parent.width * 0.88
-//        height: width * 0.23
-//        anchors.horizontalCenter: parent.horizontalCenter
-//        y: parent.height - height * 4
-//        color: "#000011"
-//        radius: height * 0.25
-//        Text {
-//            text: "Sort out"
-//            font{family: "Nunito"; pointSize: 14}
-//            anchors.centerIn: parent
-//            color: "#806FFF"
-//        }
-//    }
+    /*
+        submit button
+    */
+    Rectangle {
+        width: parent.width * 0.88
+        height: width * 0.23
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: compare.bottom
+        anchors.topMargin: 15
+//        y:  parent.height * 0.6// parent.height - height * 4
+        color: frame.color
+        radius: height * 0.25
+
+        Text {
+            text: "Sort out"
+            font{family: "Nunito"; pointSize: 14}
+            anchors.centerIn: parent
+            color: "#FCC304"
+        }
+
+        MouseArea {
+            anchors.fill: parent
+            hoverEnabled: true
+            onEntered: parent.border.color = "#FCC304"
+            onExited: parent.border.color = "transparent"
+        }
+
+    }
 
     /*
         place Input
@@ -130,7 +141,7 @@ Rectangle {
 
         // colorAnimation
         Behavior on color {
-            PropertyAnimation{ duration: 500 }
+            PropertyAnimation { duration: 500 }
         }
     }
 
@@ -141,6 +152,7 @@ Rectangle {
         id: date
         y: place.y + place.height + distance
         placeholder_text: "Today"
+        dark: root.dark
         img_src: "../../img/calendar-bold.png"
         indicator: "Date"
 //        dark: root.dark
@@ -203,7 +215,7 @@ Rectangle {
             anchors.verticalCenter: parent.verticalCenter
             x: dark ? frame.width * 0.2 : frame.width * 0.8 - width
 
-            Behavior on x{
+            Behavior on x {
                 NumberAnimation { duration: 500 }
             }
         }
@@ -212,6 +224,7 @@ Rectangle {
             hoverEnabled: true
             onClicked: root.dark = !root.dark
         }
+
 
     }
 

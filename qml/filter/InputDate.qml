@@ -6,6 +6,7 @@ Rectangle {
     color: "transparent"
     property string scheduled: day.model[day.currentIndex]
     property string f: "Comfortaa"
+//    property bool dark: true
     property string date_: {
         var index_day = day.currentIndex
 

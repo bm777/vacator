@@ -33,7 +33,7 @@ Rectangle {
    }
 
     border.color: "#7564FB"
-    radius: height * 0.25
+    radius: dark ? height * 0.25 : 5
     width: parent.width * 0.88
     height: width * 0.23
     anchors.horizontalCenter: parent.horizontalCenter
@@ -114,6 +114,10 @@ Rectangle {
         onClicked: {
             inputDate.visible = true
         }
+    }
+
+    Behavior on radius {
+        NumberAnimation {duration: 500}
     }
 
 }

@@ -52,7 +52,7 @@ Rectangle {
     **/
     color: root.dark ? "transparent" : "#C2CED3"
     border.color: "#807564FB"
-    radius: height * 0.25
+    radius: dark ? height * 0.25 : 5
     width: parent.width * 0.88
     height: width * 0.23
     anchors.horizontalCenter: parent.horizontalCenter
@@ -120,7 +120,7 @@ Rectangle {
             if(!(content.text == "")) {
                 root.color = "#7564FB"
             }else if(!root.dark && content.text == ""){
-                root.color = "#363F60"
+                root.color = "red"
                 content.color = "#f6f6f6"
                 label.color = "#f6f6f6"
             }else {
@@ -147,6 +147,10 @@ Rectangle {
 
     ColorAnimation on color {
         duration: 1000
+    }
+
+    Behavior on radius {
+        NumberAnimation {duration: 500}
     }
 
 
