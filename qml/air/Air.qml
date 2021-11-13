@@ -52,11 +52,11 @@ Rectangle {
             y: parent.height - height - x
             radius: parent.radius
             color: "#2E3859"
-            border.color: "red"
+//            border.color: "red"
 
             Rectangle {
                 id: bord
-                y: 15
+                y: 18
 //                x: parent.width * 0.3
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: parent.width * 0.6
