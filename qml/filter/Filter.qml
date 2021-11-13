@@ -105,7 +105,7 @@ Rectangle {
         MouseArea {
             anchors.fill: parent
             hoverEnabled: true
-            onEntered: parent.border.color = "#FCC304"
+            onEntered: dark ? parent.border.color = "#FCC304" : parent.border.color = "green"
             onExited: parent.border.color = "transparent"
         }
 
