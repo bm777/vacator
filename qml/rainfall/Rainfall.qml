@@ -22,7 +22,7 @@ Rectangle {
     Rectangle {
         id: main
         anchors.fill: parent
-        color: "#2E3859"  // "#01A2F8"
+        color: root.dark ? "#2E3859" : "#01A2F8"
         radius: root.radius
 
         Text {
@@ -50,7 +50,7 @@ Rectangle {
             height: parent.height * 0.7
             y: parent.height - height - x
             radius: parent.radius
-            color: "#2E3859"
+            color: "#2E3859" //
 
 
             Rectangle {
