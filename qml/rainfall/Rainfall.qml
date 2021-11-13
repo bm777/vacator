@@ -22,7 +22,7 @@ Rectangle {
     Rectangle {
         id: main
         anchors.fill: parent
-        color: "#01A2F8"
+        color: "#2E3859"  // "#01A2F8"
         radius: root.radius
 
         Text {
@@ -44,7 +44,7 @@ Rectangle {
             x: 10
 
         }
-        Rectangle {
+        Rectangle {id: selector
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width * 0.95
             height: parent.height * 0.7
