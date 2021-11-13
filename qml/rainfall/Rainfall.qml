@@ -34,14 +34,14 @@ Rectangle {
             x: 10
         }
 
-//        Image {id: img
-//            source: "../../img/air.png"
-//            width: 40
-//            height: width
-//            y: 10
-//            x: 10
+        Image {id: img
+            source: "../../img/rainfall.png"
+            width: 40
+            height: width
+            y: 10
+            x: 10
 
-//        }
+        }
         Rectangle {
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width * 0.95
