@@ -7,6 +7,7 @@ Rectangle {
     property string scheduled: day.model[day.currentIndex]
     property string f: "Comfortaa"
 //    property bool dark: true
+    property bool dark: true
     property string date_: {
         var index_day = day.currentIndex
 
@@ -25,7 +26,7 @@ Rectangle {
 
     Rectangle {
         id: frame
-        color: "#2E3957"
+        color: dark ? "#2E3957" : "#DCEAFF"
         width: parent.height
         height: parent.height
         radius: 10
