@@ -91,7 +91,7 @@ Rectangle {
         anchors.top: compare.bottom
         anchors.topMargin: 15
 //        y:  parent.height * 0.6// parent.height - height * 4
-        color: dark ? frame.color : "lightblue"
+        color: dark ? frame.color : "#01A2F8"
         radius: height * 0.25
         border.width: 1
         border.color: "transparent"
