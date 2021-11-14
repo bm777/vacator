@@ -27,12 +27,9 @@ Rectangle {
     /**
         rectangle properties
     **/
-    color: {
-       if(content.text !== "" && root.dark) return "#7564FB"
-       else return "#363F60"
-   }
+    color: root.dark ? "#7564FB" : "#807564FB"
 
-    border.color: "#7564FB"
+    border.color: dark ? "#807564FB" : "#80c6c6c6"  //7564FB
     radius: dark ? height * 0.25 : 5
     width: parent.width * 0.88
     height: width * 0.23
@@ -56,7 +53,7 @@ Rectangle {
     TextField {
         id: content
         placeholderText: placeholder_text
-        color: "#f6f6f6"
+        color: dark ? "#f6f6f6" : "#a0000000"
         maximumLength: 20
         width: parent.width - (img_input.x+img_input.width + 5)
         font{family: f; pointSize: 12; bold: true}
@@ -86,7 +83,7 @@ Rectangle {
         text: qsTr(indicator)
         y: parent.height - height - 1
         x: parent.width  * 0.3
-        color: "#f6f6f6"
+        color: content.color
         font{family: f; pointSize: 8}
     }
 
