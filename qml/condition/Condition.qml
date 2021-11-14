@@ -25,10 +25,10 @@ Rectangle {
         horizontalOffset: -5
         verticalOffset: 5
         radius: 20
-        samples: 25
-        color: "#80000000"
+        samples: dark ? 25 : 10
+        color: dark ? "#80000000" : "#20000000"
         source: main
-        visible: dark
+        visible: true
     }
     Rectangle {
         id: main

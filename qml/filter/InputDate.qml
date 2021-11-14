@@ -24,13 +24,14 @@ Rectangle {
       return data.toString().length < 2 ? "0" + data : data;
   }
 
+
     Rectangle {
         id: frame
         color: dark ? "#2E3957" : "#DCEAFF"
         width: parent.height
         height: parent.height
         radius: 10
-        border.color: "#484F59"
+        border.color: dark ? "#484F59" : "#f6f6f6"
 
 
         FontMetrics {
@@ -48,7 +49,7 @@ Rectangle {
             verticalAlignment: Text.AlignVCenter
             font.pixelSize: fontMetrics.font.pixelSize * 1
             font.family: f
-            color: "#BCC2D0"
+            color: dark ? "#BCC2D0" : "#80000000"
            }
         }
 
@@ -73,7 +74,7 @@ Rectangle {
 
                 delegate: delegateComponent
                 visibleItemCount: 5
-                width: frame.width * 0.4
+                width: frame.width * 0.5
                 height: frame.height * 0.5
                 x: frame.width - width
                 background: Rectangle {
@@ -85,16 +86,16 @@ Rectangle {
         }
 
         Rectangle {
-            y: parent.height * (0.4 + 0.04)
+            y: parent.height * (0.4 + 0.045)
             width: parent.width
             height: 1
-            color: "#484F59"
+            color: dark ? "#484F59" : "#80484F59"
         }
         Rectangle {
-            y: parent.height * (0.6 - 0.04)
+            y: parent.height * (0.6 - 0.045)
             width: parent.width
             height: 1
-            color: "#484F59"
+            color: dark ? "#484F59" : "#80484F59"
         }
 
         Rectangle {
@@ -104,7 +105,7 @@ Rectangle {
             anchors.horizontalCenter: parent.horizontalCenter
             color: "#7765FD"
             radius: height/2
-            border.color: "#484F59"
+            border.color: dark ? "#484F59" : "transparent"
             Text {
                 anchors.centerIn: parent
                 text: "save"
