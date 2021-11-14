@@ -84,14 +84,24 @@ Rectangle {
     /*
         submit button
     */
-    Rectangle {
+    DropShadow {
+        anchors.fill: btn
+        horizontalOffset: -5
+        verticalOffset: 5
+        radius: 20
+        samples: 10
+        color: "#50000000"
+        source: btn
+    }
+
+    Rectangle {id: btn
         width: parent.width * 0.88
         height: width * 0.23
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: compare.bottom
         anchors.topMargin: 15
 //        y:  parent.height * 0.6// parent.height - height * 4
-        color: dark ? frame.color : "#01A2F8"
+        color: dark ? frame.color : "#7564FB"
         radius: height * 0.25
         border.width: 1
         border.color: "transparent"

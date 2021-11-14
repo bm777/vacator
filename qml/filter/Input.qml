@@ -117,16 +117,21 @@ Rectangle {
         anchors.bottomMargin: root.radius/2
         x: parent.width - width
         visible:  {
-            if(!(content.text == "")) {
+            if(!(content.text == "") && root.dark) {        /// not empty and dark
                 root.color = "#7564FB"
-            }else if(!root.dark && content.text == ""){
-                root.color = "#3577F7"
+
+            }else if(!(content.text == "") && !root.dark) { /// not empty and light
+                root.color = "#207564FB"
+                content.color = "#000000"
+                label.color = "#80000000"
+            }else if(!root.dark && content.text == ""){     /// empty and light
+                root.color = "#ffffff"
                 content.color = "#f6f6f6"
                 label.color = "#f6f6f6"
-            }else {
+            }else if(!root.dark && content.text !== "") {   /// emty and dark                                    /// empty and light
                 root.color = "transparent"
                 content.color = "#f6f6f6"
-                label.color = "#f6f6f6"
+                label.color = "#80000000"
             }
 
             return !(content.text == "")
