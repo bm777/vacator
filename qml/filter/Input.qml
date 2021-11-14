@@ -122,16 +122,20 @@ Rectangle {
 
             }else if(!(content.text == "") && !root.dark) { /// not empty and light
                 root.color = "#207564FB"
-                content.color = "#000000"
+                content.color = "#a0000000"
                 label.color = "#80000000"
             }else if(!root.dark && content.text == ""){     /// empty and light
                 root.color = "#ffffff"
-                content.color = "#f6f6f6"
-                label.color = "#f6f6f6"
-            }else if(!root.dark && content.text !== "") {   /// emty and dark                                    /// empty and light
+                content.color = "#80000000"
+                label.color = "#80000000"
+            }else if(root.dark && content.text !== "") {   /// emty and dark                                    /// empty and light
                 root.color = "transparent"
                 content.color = "#f6f6f6"
-                label.color = "#80000000"
+                label.color = "#f6f6f6"
+            } else {
+                root.color = "transparent"
+                content.color = "#f6f6f6"
+                label.color = "#f6f6f6"
             }
 
             return !(content.text == "")
