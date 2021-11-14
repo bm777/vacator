@@ -51,7 +51,7 @@ Rectangle {
         rectangle properties
     **/
     color: root.dark ? "transparent" : "#C2CED3"
-    border.color: "#807564FB"
+    border.color: dark ? "#807564FB" : "#80c6c6c6"
     radius: dark ? height * 0.25 : 5
     width: parent.width * 0.88
     height: width * 0.23
@@ -120,7 +120,7 @@ Rectangle {
             if(!(content.text == "")) {
                 root.color = "#7564FB"
             }else if(!root.dark && content.text == ""){
-                root.color = "#c6c6c6"
+                root.color = "#3577F7"
                 content.color = "#f6f6f6"
                 label.color = "#f6f6f6"
             }else {
