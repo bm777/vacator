@@ -5,6 +5,7 @@ Rectangle {
     property string first: "first element LVP"
     property string second: "second element"
     color: "transparent"
+    property bool dark: true
     property string f: "Comfortaa"
 
     Rectangle {
@@ -18,7 +19,7 @@ Rectangle {
         Text {id: content1
             text: first
             font{family: f; pointSize: 12; italic: true}
-            color: "#40ffffff"
+            color: dark ? "#40ffffff" : "#80000000"
             anchors.verticalCenter: parent.verticalCenter
             x: first_rectangle.width * 2
         }
@@ -32,12 +33,12 @@ Rectangle {
         height: width
         anchors.verticalCenter: parent.verticalCenter
         x: first_rectangle.x +10+ content1.width + 40
-        color: "#80ffffff"
+        color:  dark ? "#80ffffff" : "#80000000"
 
         Text {id: content2
             text: second
             font{family: f; pointSize: 12; italic: true}
-            color: "#40ffffff"
+            color: dark ? "#40ffffff" : "#80000000"
             anchors.verticalCenter: parent.verticalCenter
             x: first_rectangle.width * 2
         }

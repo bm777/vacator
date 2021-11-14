@@ -34,6 +34,7 @@ Window {
         anchors.fill: parent
         color: "#DCEAFF"
         visible: !filter.dark
+
     }
 
 
@@ -108,6 +109,7 @@ Window {
             width: parent.width
             height: parent.height * 0.07
             y: parent.height - height
+            dark: filter.dark
         }
     }
 

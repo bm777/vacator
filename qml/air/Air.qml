@@ -26,6 +26,10 @@ Rectangle {
         color: dark ? "#2E3859" : "#ffffff"
         radius: root.radius
 
+        ColorAnimation on color{
+           duration: 1000
+        }
+
         Text {
             id: title__
             text: "Air Quality"
@@ -109,7 +113,7 @@ Rectangle {
                 id: second_
                 text: "45"
                 font{family: f; pointSize: 14; bold: false}
-                color: "#80ffffff"
+                color: dark ? "#80ffffff" : "#80000000"
                 x: parent.width * 0.6
                 y: first_.y + first_.height/2 - height/2
             }

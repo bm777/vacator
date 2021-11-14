@@ -98,7 +98,7 @@ Rectangle {
             Rectangle {
                 width: first_.width * 1.2
                 height: 1
-                color: dark ? "#4F557A" : "#804F557A"
+                color: dark ? "#4F557A" : "#404F557A"
                 x: first_.x + first_.width/2 - width/2
                 y: first_.y + first_.height + 5
             }
