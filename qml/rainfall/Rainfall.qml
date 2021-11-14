@@ -15,15 +15,15 @@ Rectangle {
         horizontalOffset: -5
         verticalOffset: 5
         radius: 20
-        samples: 25
-        color: "#50000000"
+        samples: dark ? 25 : 10
+        color: dark ? "#50000000" : "#20000000"
         source: main
     }
 
     Rectangle {
         id: main
         anchors.fill: parent
-        color: root.dark ? "#2E3859" : "#01A2F8"
+        color: root.dark ? "#2E3859" : "#ffffff"
         radius: root.radius
 
         Text {
@@ -59,7 +59,7 @@ Rectangle {
                 height: parent.height * 0.7
                 width: 25
                 radius: width/2
-                border.color: "#4F557A"
+                border.color: dark ? "#4F557A" : "#304F557A"
                 color: "transparent"
                 x: parent.width - width * 1.7
                 Rectangle{
@@ -98,7 +98,7 @@ Rectangle {
             Rectangle {
                 width: first_.width * 1.2
                 height: 1
-                color: "#4F557A"
+                color: dark ? "#4F557A" : "#804F557A"
                 x: first_.x + first_.width/2 - width/2
                 y: first_.y + first_.height + 5
             }
@@ -108,7 +108,7 @@ Rectangle {
                 id: second_
                 text: "38"
                 font{family: f; pointSize: 14; bold: false}
-                color: "#80ffffff"  //#A7AFDF
+                color: dark ? "#80ffffff"  : "#80000000"
                 x: first_.x + first_.width/2 - width/2
                 y: parent.height * 0.5
             }

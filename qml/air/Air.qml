@@ -15,8 +15,8 @@ Rectangle {
         horizontalOffset: -5
         verticalOffset: 5
         radius: 20
-        samples: 25
-        color: "#50000000"
+        samples: dark ? 25 : 10
+        color: dark ? "#50000000" : "#20000000"
         source: main
     }
 
@@ -30,7 +30,7 @@ Rectangle {
             id: title__
             text: "Air Quality"
             font{family: f; pointSize:10}
-            color: "#B5BBCE"
+            color: dark ? "#B5BBCE" : "#000000"
             anchors.left: img.right
             y: img.y + img.height/2 - height/2
             anchors.leftMargin: 5
@@ -52,7 +52,7 @@ Rectangle {
             height: parent.height * 0.7
             y: parent.height - height - x
             radius: parent.radius
-            color: "#2E3859"
+            color: dark ? "#2E3859" : "#ffffff"
 //            border.color: "red"
 
             Rectangle {
@@ -64,7 +64,7 @@ Rectangle {
                 radius: 10
                 height: width * 0.3
                 color: "transparent"
-                border.color: "#4F557A"
+                border.color: dark ? "#4F557A" : "#304F557A"
 
                 Rectangle {
                     width: parent.width * 0.8
