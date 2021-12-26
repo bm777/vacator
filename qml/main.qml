@@ -32,7 +32,7 @@ Window {
     }
     Rectangle {
         anchors.fill: parent
-        color: "#DCEAFF"
+        color: "#F6F6F8"
         visible: !filter.dark
 
     }
@@ -43,7 +43,7 @@ Window {
     */
     Filter {
         id: filter
-
+        onDarkChanged: run.start()
     }
 
     Item {
@@ -58,7 +58,7 @@ Window {
             width: 1
             height: parent.height
             x: parent.width - width
-            color: "#4F557A"
+            color: filter.dark ? "#4F557A" : "#804F557A"
         }
         /*
             condition
@@ -89,6 +89,12 @@ Window {
             x: condition.x
             dark: filter.dark
         }
+        Rectangle {
+            anchors.fill: air
+            radius: air.radius
+            id: r_air
+            color: "transparent"
+        }
         /*
             air
         */
@@ -99,6 +105,11 @@ Window {
             anchors.left: air.right
             anchors.leftMargin: (parent.width - width*2 - air.x)/2
             dark: filter.dark
+        } Rectangle {
+            anchors.fill: rainfall
+            radius: rainfall.radius
+            id: r_rainfall
+            color: "transparent"
         }
 
         /*
@@ -139,7 +150,26 @@ Window {
         }
     }
 
+    //////////////////////
+    ParallelAnimation {
+        id: run
 
+
+        PropertyAnimation {
+            target: r_rainfall
+            property: "color"
+            from: "#40F6F6F8"
+            to: "transparent"
+            duration: 1000
+        }
+        PropertyAnimation {
+            target: r_air
+            property: "color"
+            from: "#40F6F6F8"
+            to: "transparent"
+            duration: 1000
+        }
+    }
 
 
 }

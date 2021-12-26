@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.12.4, 2021-11-01T18:33:52. -->
+<!-- Written by QtCreator 4.12.4, 2021-12-08T02:44:06. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -157,7 +157,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/qt/project/vacator/main.py</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/qt/project/vacator/main.py</value>
     <value type="bool" key="PythonEditor.RunConfiguation.Buffered">false</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{80b43376-45e2-444c-a4dd-ea29e8ad53e0}</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{632eae31-fe9e-46d5-8e85-c4c4884ee4d5}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/qt/project/vacator/main.py</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>

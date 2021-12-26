@@ -52,7 +52,7 @@ Rectangle {
     **/
     color: root.dark ? "transparent" : "#C2CED3"
     border.color: dark ? "#807564FB" : "#80c6c6c6"
-    radius: dark ? height * 0.25 : 5
+    radius: dark ? height * 0.25 : height/2 //5
     width: parent.width * 0.88
     height: width * 0.23
     anchors.horizontalCenter: parent.horizontalCenter
@@ -66,7 +66,7 @@ Rectangle {
         height: parent.height * 0.4
         width: height
         anchors.verticalCenter: parent.verticalCenter
-        x: parent.width * 0.1
+        x: parent.width * 0.07
     }
 
     /*

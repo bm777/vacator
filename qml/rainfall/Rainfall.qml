@@ -16,7 +16,7 @@ Rectangle {
         verticalOffset: 5
         radius: 20
         samples: dark ? 25 : 10
-        color: dark ? "#50000000" : "#20000000"
+        color: dark ? "#50000000" : "transparent"
         source: main
     }
 
@@ -25,6 +25,10 @@ Rectangle {
         anchors.fill: parent
         color: root.dark ? "#2E3859" : "#ffffff"
         radius: root.radius
+
+        onColorChanged: {
+
+        }
 
         Text {
             id: title__
@@ -121,7 +125,8 @@ Rectangle {
                 color: second_.color
             }
         }
-
-
     }
+
+    /////////////////////////// Animation
+
 }

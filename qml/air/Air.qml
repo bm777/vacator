@@ -16,7 +16,7 @@ Rectangle {
         verticalOffset: 5
         radius: 20
         samples: dark ? 25 : 10
-        color: dark ? "#50000000" : "#20000000"
+        color: dark ? "#50000000" : "transparent"
         source: main
     }
 
