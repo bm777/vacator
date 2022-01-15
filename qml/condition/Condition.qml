@@ -62,17 +62,17 @@ Rectangle {
             anchors.topMargin: 40
             width: parent.width * 0.4
             radius: 8
-            color: "#363F60"
+            color: root.dark ? "#363F60" : "white"
+            border.color: root.dark ? "transparent" : "#304F557A"
 
             // text of town
             Text {
                 id: place
                 text: root.town
                 font{family: f; pointSize: 9; bold: true}
-                color: "#ffffff"
+                color: root.dark ? "#ffffff": "#2E3859"
                 x: parent.width * 0.1
                 anchors.verticalCenter: parent.verticalCenter
-
             }
             Image {
                 anchors.verticalCenter: parent.verticalCenter
