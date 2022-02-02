@@ -6,7 +6,7 @@ Rectangle {
     id: root
     width: parent.width * 0.23
     height: parent.height
-    property bool dark: true
+    property bool dark: false
     property string f: "Comfortaa"
 
     RectangularGlow {
@@ -90,16 +90,16 @@ Rectangle {
         verticalOffset: 5
         radius: 20
         samples: 10
-        color: "#50000000"
+        color: dark ? "#50000000" : "#30000000"
         source: btn
     }
 
     Rectangle {id: btn
-        width: parent.width * 0.88
-        height: width * 0.23
+        width: parent.width * 0.8
+        height: width * 0.21
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: compare.bottom
-        anchors.topMargin: 15
+        anchors.topMargin: 20
 //        y:  parent.height * 0.6// parent.height - height * 4
         color: dark ? frame.color : "#7564FB"
         radius: height * 0.25
@@ -107,9 +107,9 @@ Rectangle {
         border.color: "transparent"
         Text {
             text: "Sort out"
-            font{family: "Nunito"; pointSize: 14}
+            font{family: "Nunito"; pointSize: 12}
             anchors.centerIn: parent
-            color: dark ? "#FCC304" : "black"
+            color: dark ? "#FCC304" : "white"
         }
 
         MouseArea {
@@ -127,7 +127,7 @@ Rectangle {
     Input {
         id: place
         y: tools.y + tools.height + 10
-        placeholder_text: "Washingtown"
+        placeholder_text: "Washington..."
         img_src: "../../img/place-bold.png"
         indicator: "Place"
 
@@ -145,7 +145,7 @@ Rectangle {
     Input {
         id: compare
         y: date.y + date.height + distance
-        placeholder_text: "Washingtown"
+        placeholder_text: "Washington ..."
         img_src: "../../img/place-bold.png"
         indicator: "Comparison place"
         dark: root.dark

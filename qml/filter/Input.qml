@@ -51,8 +51,8 @@ Rectangle {
         rectangle properties
     **/
     color: root.dark ? "transparent" : "#C2CED3"
-    border.color: dark ? "#807564FB" : "#80c6c6c6"
-    radius: dark ? height * 0.25 : height/2 //5
+    border.color: dark ? "#807564FB" : "#307564FB"//"#80c6c6c6"
+    radius: dark ? height * 0.25 : height * 0.25// height/2 //5
     width: parent.width * 0.88
     height: width * 0.23
     anchors.horizontalCenter: parent.horizontalCenter

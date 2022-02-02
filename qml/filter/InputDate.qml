@@ -24,10 +24,15 @@ Rectangle {
       return data.toString().length < 2 ? "0" + data : data;
   }
 
-
+    Rectangle{
+        anchors.fill: frame
+        visible: !dark
+    }
     Rectangle {
+
+
         id: frame
-        color: dark ? "#2E3957" : "#DCEAFF"
+        color: dark ? "#2E3957" : "#807564FB"//"#DCEAFF"
         width: parent.height
         height: parent.height
         radius: 10
