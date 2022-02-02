@@ -147,6 +147,7 @@ Window {
             anchors.horizontalCenter: parent.horizontalCenter
             y: town.y+ town.height + 45
             town: "New York"
+            dark: filter.dark
         }
     }
 
