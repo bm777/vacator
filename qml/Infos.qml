@@ -33,21 +33,21 @@ Rectangle {
             font{family: f; pointSize: 30}
             color: dark ? "#7564FB" : "#006DA0"
             x: parent.width/2 - (width+t.width) /2
-            y: parent.height * 0.3
+            y: parent.height * 0.38
         }
         Text {id: t
             text: "towns"
             font{family: "Nunito"; pointSize: 20}
             color: num.color //004DF7
             x: num.x + num.width + 10
-            y: parent.height * 0.34
+            y: parent.height * 0.42
         }
         Text {
             text: "(available)"
             font{family: f; pointSize: 14}
             color: dark? "#40ffffff": "#cccccc"
             anchors.horizontalCenter: parent.horizontalCenter
-            y: parent.height * 0.52
+            y: parent.height * 0.58
         }
 
         ///

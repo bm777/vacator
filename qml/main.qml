@@ -139,6 +139,7 @@ Window {
             height: parent.height * 0.33
             anchors.horizontalCenter: parent.horizontalCenter
             y: parent.height * 0.14
+            dark: filter.dark
         }
         Infos {
             id: infoss

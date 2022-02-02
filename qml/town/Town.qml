@@ -7,8 +7,9 @@ Rectangle {
     anchors.topMargin: 35
     radius: 10
     property real temperature: 31
-    property string town: "Washingtown"
+    property string town: "Maximum"
     property string f: "Comfortaa"
+    property bool dark: true
 
     DropShadow {
         anchors.fill: parent
@@ -24,14 +25,14 @@ Rectangle {
     Rectangle {
         id: main
         anchors.fill: parent
-        color: "#2E3859"
+        color: dark? "#2E3859" : "white"
         radius: root.radius
 
         Text {
             id: title__
             text: "Temperature"
             font{family: f; pointSize:10}
-            color: "#E8E8E8"
+            color: dark ? "#E8E8E8" : "#000000"
             y: 10
             x: 10
             anchors.horizontalCenter: parent.horizontalCenter
@@ -40,7 +41,7 @@ Rectangle {
         Text {id: t
             text: temperature
             font{family: f; pointSize: 40}
-            color: "#7564FB" //004DF7
+            color:  dark ? "#7564FB" : "#006DA0"
             anchors.horizontalCenter: parent.horizontalCenter
             y: parent.height * 0.25
         }
@@ -55,16 +56,16 @@ Rectangle {
         ////
         Rectangle {
             width: parent.width * 0.7
-            height: 20
+            height: 25
             radius: height/2
             anchors.horizontalCenter: parent.horizontalCenter
             y: parent.height - height * 2
-            color: "#7564FB"
+            color: dark ? "#7564FB" : "#006DA0"
             Text {
                 text: town
                 font{family: f; pointSize: 10}
                 anchors.centerIn: parent
-                color: "#2E3859"
+                color: "white" //"#2E3859"
             }
         }
 
