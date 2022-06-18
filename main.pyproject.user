@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 7.0.2, 2022-05-24T16:49:04. -->
+<!-- Written by QtCreator 7.0.2, 2022-06-18T21:54:11. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -155,6 +155,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/bm7/space/vacator/LICENSE</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/space/vacator/LICENSE</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/space/vacator/LICENSE</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{423b08be-b150-4f49-9d68-2b475426bef4}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/space/vacator/LICENSE</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -172,6 +173,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/bm7/space/vacator/img/sun.png</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/space/vacator/img/sun.png</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/space/vacator/img/sun.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{423b08be-b150-4f49-9d68-2b475426bef4}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/space/vacator/img/sun.png</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -189,6 +191,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/bm7/space/vacator/img/calendar-bold.png</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/space/vacator/img/calendar-bold.png</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/space/vacator/img/calendar-bold.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{423b08be-b150-4f49-9d68-2b475426bef4}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/space/vacator/img/calendar-bold.png</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -206,6 +209,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/bm7/space/vacator/img/rain.gif</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/space/vacator/img/rain.gif</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/space/vacator/img/rain.gif</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{423b08be-b150-4f49-9d68-2b475426bef4}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/space/vacator/img/rain.gif</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -223,6 +227,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/bm7/space/vacator/img/cloud.png</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/space/vacator/img/cloud.png</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/space/vacator/img/cloud.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{423b08be-b150-4f49-9d68-2b475426bef4}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/space/vacator/img/cloud.png</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -240,6 +245,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/bm7/space/vacator/img/switch.png</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/space/vacator/img/switch.png</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/space/vacator/img/switch.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{423b08be-b150-4f49-9d68-2b475426bef4}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/space/vacator/img/switch.png</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -257,7 +263,25 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/bm7/space/vacator/README.md</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/space/vacator/README.md</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/space/vacator/README.md</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{423b08be-b150-4f49-9d68-2b475426bef4}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/space/vacator/README.md</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/bm7/space/vacator</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.17">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/bm7/space/vacator/git-sync.sh</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/space/vacator/git-sync.sh</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/space/vacator/git-sync.sh</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/space/vacator/git-sync.sh</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
@@ -274,6 +298,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/bm7/space/vacator/requirements.txt</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/space/vacator/requirements.txt</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/space/vacator/requirements.txt</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{423b08be-b150-4f49-9d68-2b475426bef4}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/space/vacator/requirements.txt</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -291,6 +316,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/bm7/space/vacator/img/dc.png</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/space/vacator/img/dc.png</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/space/vacator/img/dc.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{423b08be-b150-4f49-9d68-2b475426bef4}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/space/vacator/img/dc.png</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -308,6 +334,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/bm7/space/vacator/img/place.png</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/space/vacator/img/place.png</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/space/vacator/img/place.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{423b08be-b150-4f49-9d68-2b475426bef4}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/space/vacator/img/place.png</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -325,6 +352,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/bm7/space/vacator/img/place-bold.png</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/space/vacator/img/place-bold.png</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/space/vacator/img/place-bold.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{423b08be-b150-4f49-9d68-2b475426bef4}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/space/vacator/img/place-bold.png</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -342,6 +370,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/bm7/space/vacator/main.pyproject.user</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/space/vacator/main.pyproject.user</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/space/vacator/main.pyproject.user</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{423b08be-b150-4f49-9d68-2b475426bef4}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/space/vacator/main.pyproject.user</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -359,6 +388,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/bm7/space/vacator/img/switch-town.png</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/space/vacator/img/switch-town.png</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/space/vacator/img/switch-town.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{423b08be-b150-4f49-9d68-2b475426bef4}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/space/vacator/img/switch-town.png</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -376,6 +406,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/bm7/space/vacator/img/calendar.png</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/space/vacator/img/calendar.png</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/space/vacator/img/calendar.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{423b08be-b150-4f49-9d68-2b475426bef4}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/space/vacator/img/calendar.png</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -393,6 +424,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/bm7/space/vacator/img/user.png</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/space/vacator/img/user.png</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/space/vacator/img/user.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{423b08be-b150-4f49-9d68-2b475426bef4}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/space/vacator/img/user.png</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -400,7 +432,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/bm7/space/vacator/img</value>
    </valuemap>
-   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">17</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">18</value>
   </valuemap>
  </data>
  <data>
