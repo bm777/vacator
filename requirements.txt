@@ -1,4 +1,2 @@
 requests
-fastapi
-uvicorn[standard]
-
+PySide2==5.15.0
