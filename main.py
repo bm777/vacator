@@ -1,17 +1,20 @@
 import uvicorn
+import pandas as pd
 from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.on_event("startup")
-async def startup_event():
-    pass
+def startup_event():
+    return pd.read_pickle("forecast.pkl")
 
-@app.get("/temp/{dt}")
-def get_temp(dt: str):
+@app.get("/{town}/{ds}/{dt}")
+def get_data(town: str, ds: str, dt : str):
     return {
-        "temperature": "55°C",
+        "Value": "55°C",
+        "town": town,
+        "dataset": ds,
         "date time": dt
+
     }
 
 
