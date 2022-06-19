@@ -1,22 +1,21 @@
-# This Python file uses the following encoding: utf-8
-import sys
-import os
+import uvicorn
+from fastapi import FastAPI
 
-from PySide2.QtGui import QGuiApplication
-from PySide2.QtQml import QQmlApplicationEngine
-from PySide2.QtGui import QFontDatabase
+app = FastAPI()
 
-CURRENT_DIRECTORY = os.path.dirname(os.path.realpath(__file__))
+@app.on_event("startup")
+async def startup_event():
+    pass
+
+@app.get("/temp/{dt}")
+def get_temp(dt: str):
+    return {
+        "temperature": "55°C",
+        "date time": dt
+    }
+
+
+
 
 if __name__ == "__main__":
-    app = QGuiApplication(sys.argv)
-    engine = QQmlApplicationEngine()
-
-    font = os.path.join(CURRENT_DIRECTORY, "font", "Comfortaa/Comfortaa-Regular.ttf")
-    _id = QFontDatabase.addApplicationFont(font)
-
-    engine.load(os.path.join(os.path.dirname(__file__), "qml/main.qml"))
-
-    if not engine.rootObjects():
-        sys.exit(-1)
-    sys.exit(app.exec_())
+    uvicorn.run("main:app", host="0.0.0.0", port=5400, reload=True)
