@@ -7,15 +7,19 @@ app = FastAPI()
 def startup_event():
     return pd.read_pickle("forecast.pkl")
 
-@app.get("/{town}/{ds}/{dt}")
-def get_data(town: str, ds: str, dt : str):
-    return {
-        "Value": "55°C",
-        "town": town,
-        "dataset": ds,
-        "date time": dt
+@app.get("/")
+def _main():
+    return {"response": "THE API ENDPOINT format is /town/dataset/datetime "}
 
-    }
+# @app.get("/{town}/{ds}/{dt}")
+# def get_data(town: str, ds: str, dt : str):
+#     return {
+#         "Value": "55°C",
+#         "town": town,
+#         "dataset": ds,
+#         "date time": dt
+#
+#     }
 
 
 
