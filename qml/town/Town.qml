@@ -7,7 +7,7 @@ Rectangle {
     anchors.topMargin: 35
     radius: 10
     property real temperature: 31
-    property string town: "Maximum"
+    property string town: "Average"
     property string f: "Comfortaa"
     property bool dark: true
 
@@ -17,7 +17,7 @@ Rectangle {
         verticalOffset: 5
         radius: 20
         samples: 25
-        color: dark ? "#30000000" : "#20000000"
+        color: dark ? "#30000000" : "#10000000"
         source: main
 //        visible: false
     }
