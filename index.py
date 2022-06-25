@@ -26,7 +26,7 @@ def _get(d, town, ds, dt):
     row_date = d[ d["date"] == dt+" 00:00:00" ]
     row_town = row_date[row_date["town"] == town]
     row_dataset = row_town[row_town["dataset"] == ds]
-    return row_dataset["ValueF"].values
+    return row_dataset["ValueF"].values[0]
 
 
 @app.route('/<town>/<datetime>') #<>
@@ -39,9 +39,9 @@ def _data(town, datetime):
     d = forecast
 
 
-    result = [ _get(d, town, x, datetime)[0] for x in ["temp", "precip", "solar"] ]
+    result = [ _get(d, town, x, datetime) for x in ["temp", "precip", "solar"] ]
 
     return {
-        "response": 'The data from the <'+dataset+'> dataset, at <'+town+'> on <'+datetime+'>',
+        "response": 'The data for <'+town+'> on <'+datetime+'>',
         "values": result
     }
