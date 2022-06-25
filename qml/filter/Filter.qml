@@ -98,8 +98,8 @@ Rectangle {
         width: parent.width * 0.8
         height: width * 0.21
         anchors.horizontalCenter: parent.horizontalCenter
-        anchors.top: compare.bottom
-        anchors.topMargin: 20
+        anchors.top: place.bottom
+        anchors.topMargin: 20 + place.height * 2 // cause of the hidden comparison
 //        y:  parent.height * 0.6// parent.height - height * 4
         color: dark ? frame.color : "#7564FB"
         radius: height * 0.25
@@ -142,19 +142,19 @@ Rectangle {
     /*
         compare Input
     */
-    Input {
-        id: compare
-        y: date.y + date.height + distance
-        placeholder_text: "Washington ..."
-        img_src: "../../img/place-bold.png"
-        indicator: "Comparison place"
-        dark: root.dark
+//    Input {
+//        id: compare
+//        y: date.y + date.height + distance
+//        placeholder_text: "Washington ..."
+//        img_src: "../../img/place-bold.png"
+//        indicator: "Comparison place"
+//        dark: root.dark
 
-        // colorAnimation
-        Behavior on color {
-            PropertyAnimation { duration: 500 }
-        }
-    }
+//        // colorAnimation
+//        Behavior on color {
+//            PropertyAnimation { duration: 500 }
+//        }
+//    }
 
     /*
         compare Input
