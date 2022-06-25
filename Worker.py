@@ -19,5 +19,5 @@ class Worker(QObject):
         url = self.url + town.capitalize() +"/"+ datetime
         re = requests.get(url)
         data = re.json()
-        print(data["values"])
+
         return data["values"]

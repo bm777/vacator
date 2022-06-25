@@ -7,7 +7,40 @@ Rectangle {
     width: parent.width * 0.23
     height: parent.height
     property bool dark: false
+    property real temp: 0
+    property real precip: 0
+    property real solar: 0
     property string f: "Comfortaa"
+
+    property bool loader: {
+        if(busy.running == true) {
+            ll.sourceComponent = comp
+            return true
+        }
+        return false
+    }
+    Loader{
+        id: ll
+        asynchronous: true
+//        sourceComponent: comp
+        visible: status == Loader.Ready
+    }
+
+    Component {
+        id: comp
+
+        Rectangle {
+            property real _d: {
+                var temporary = bridge.wdata("Miami", "2022-06-25")
+                root.temp = temporary[0]
+                root.precip = temporary[1]
+                root.solar = temporary[2]
+                print(temp, precip, solar)
+                busy.running = false
+                return 0
+            }
+        }
+    }
 
     RectangularGlow {
         anchors.fill: root
@@ -126,9 +159,25 @@ Rectangle {
             }
 
             onClicked: {
-                print(bridge.wdata("Miami", "2022-06-25"))
+                busy.running = true
             }
         }
+
+    }
+
+//    Text {id: placeholder
+//        text: "Forecasting..."
+//        font{family: "Nunito"; pointSize: 12}
+//        anchors.horizontalCenter: parent.horizontalCenter
+//        anchors.top: btn.bottom
+//        anchors.topMargin: 20
+//        color: dark ? "white" : "#FCC304"
+//    }
+    BusyIndicator {id: busy
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: btn.bottom
+        anchors.topMargin: 20
+        running: false
 
     }
 
@@ -250,9 +299,15 @@ Rectangle {
 
     }
 
-
-
-
+//    Timer {
+//        id: timer
+//        repeat: false
+//        running: false
+//        onTriggered: {
+////            busy.running = true
+//            loader = true
+//        }
+//    }
 
 
 }
