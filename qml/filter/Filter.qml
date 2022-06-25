@@ -105,8 +105,8 @@ Rectangle {
         radius: height * 0.25
         border.width: 1
         border.color: "transparent"
-        Text {
-            text: "Sort out"
+        Text {id: id_forecast
+            text: "Forecast"
             font{family: "Nunito"; pointSize: 12}
             anchors.centerIn: parent
             color: dark ? "#FCC304" : "white"
@@ -115,8 +115,16 @@ Rectangle {
         MouseArea {
             anchors.fill: parent
             hoverEnabled: true
-            onEntered: dark ? parent.border.color = "#FCC304" : parent.border.color = "green"
-            onExited: parent.border.color = "transparent"
+            onEntered: {
+                dark ? parent.border.color = "#FCC304" : parent.border.color = "transparent"
+                id_forecast.font.bold = true
+            }
+
+            onExited: {
+                parent.border.color = "transparent"
+                id_forecast.font.bold = false
+            }
+
             onClicked: {
                 print(bridge.wdata("Miami", "2022-06-25"))
             }
