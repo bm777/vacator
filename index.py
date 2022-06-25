@@ -17,26 +17,31 @@ def load_forecast():
 @app.route('/')
 def home():
     """
-    Show the defaulkt format of the principal ENDPOINT
+    API V2
+    Show the default format of the principal ENDPOINT
     """
-    return {"response": "THE API ENDPOINT format is /<town>/<dataset>/<datetime> "}
+    return {"response": "THE API ENDPOINT format is /<town>/<datetime> "}
+
+def _get(d, town, ds, dt):
+    row_date = d[ d["date"] == dt+" 00:00:00" ]
+    row_town = row_date[row_date["town"] == town]
+    row_dataset = row_town[row_town["dataset"] == ds]
+    return row_dataset["ValueF"].values
 
 
-@app.route('/<town>/<dataset>/<datetime>') #<>
-def _data(town, dataset, datetime):
+@app.route('/<town>/<datetime>') #<>
+def _data(town, datetime):
     """
     grab data the forecast model
     """
 
     forecast = load_forecast()
     d = forecast
-    row_date = d[ d["date"] == datetime+" 00:00:00" ]
-    row_town = row_date[row_date["town"] == town]
-    row_dataset = row_town[row_town["dataset"] == dataset]
-    value = row_dataset["ValueF"].values
-    print(value)
+
+
+    result = [ _get(d, town, x, datetime)[0] for x in ["temp", "precip", "solar"] ]
 
     return {
         "response": 'The data from the <'+dataset+'> dataset, at <'+town+'> on <'+datetime+'>',
-        "value": value[0]
+        "values": result
     }
