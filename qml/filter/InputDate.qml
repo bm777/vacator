@@ -10,14 +10,10 @@ Rectangle {
     property bool dark: true
     property string date_: {
         var index_day = day.currentIndex
-
         var formated_date = new Date( new Date().setDate(new Date().getDate() +index_day))
-
         var final_date = Qt.formatDate(formated_date,"yyyy-MM-dd")
-
         return final_date
     }
-
 
     function formatText(count, modelData) {
       var data = count === 12 ? modelData + 1 : modelData;

@@ -6,7 +6,7 @@ Rectangle {
     width: parent.width * 0.35
     anchors.topMargin: 35
     radius: 10
-    property real temperature: 31
+    property real temperature: 0
     property string town: "Average"
     property string f: "Comfortaa"
     property bool dark: true
@@ -39,7 +39,7 @@ Rectangle {
         }
 
         Text {id: t
-            text: temperature
+            text: temperature == 0 ? "--" : temperature
             font{family: f; pointSize: 40}
             color:  dark ? "#7564FB" : "#006DA0"
             anchors.horizontalCenter: parent.horizontalCenter
