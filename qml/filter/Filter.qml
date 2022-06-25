@@ -118,7 +118,7 @@ Rectangle {
             onEntered: dark ? parent.border.color = "#FCC304" : parent.border.color = "green"
             onExited: parent.border.color = "transparent"
             onClicked: {
-                print(bridge.wdata("Miami", "2022/06/25"))
+                print(bridge.wdata("Miami", "2022-06-25"))
             }
         }
 
