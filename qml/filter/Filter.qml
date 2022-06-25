@@ -164,7 +164,7 @@ Rectangle {
         y: place.y + place.height + distance
         placeholder_text: "Today"
         dark: root.dark
-        img_src: "../../img/calendar-bold.png"
+        img_src: "../../img/calendar.png"
         indicator: "Date"
 //        dark: root.dark
         Behavior on color {

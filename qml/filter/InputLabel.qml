@@ -27,7 +27,7 @@ Rectangle {
     /**
         rectangle properties
     **/
-    color: root.dark ? "#7564FB" : "#807564FB"
+    color: root.dark ? "#7564FB" : "#ffffff" //807564FB
 
     border.color: dark ? "#807564FB" : "#80c6c6c6"  //7564FB
     radius: dark ? height * 0.25 : height * 0.25 //height/2  //5
