@@ -11,7 +11,7 @@ Rectangle {
     radius: 8
     property string f: "Comfortaa"
     property string town: "town"
-    property string compared: "New York"
+    property string compared: "town 2"
     property string condition : "" // Sunny Cloudy Rainy
 
 //    RectangularGlow {

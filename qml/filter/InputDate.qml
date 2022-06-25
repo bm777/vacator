@@ -24,7 +24,7 @@ Rectangle {
       return data.toString().length < 2 ? "0" + data : data;
   }
 
-    Rectangle{
+    Rectangle {
         anchors.fill: frame
         visible: !dark
     }
@@ -32,7 +32,7 @@ Rectangle {
 
 
         id: frame
-        color: dark ? "#2E3957" : "#807564FB"//"#DCEAFF"
+        color: dark ? "#2E3957" : "#80006DA0"//"#DCEAFF"
         width: parent.height
         height: parent.height
         radius: 10
@@ -54,6 +54,7 @@ Rectangle {
             verticalAlignment: Text.AlignVCenter
             font.pixelSize: fontMetrics.font.pixelSize * 1
             font.family: f
+            font.bold: true
             color: dark ? "#BCC2D0" : "#80000000"
            }
         }
@@ -65,7 +66,6 @@ Rectangle {
             anchors.horizontalCenter: parent.horizontalCenter
             Tumbler {
                 id: day
-
                 model: {
                     var list_date = ["today"]
                     var date_splited
@@ -87,7 +87,6 @@ Rectangle {
 //                    border.color: "red"
                 }
             }
-
         }
 
         Rectangle {
@@ -108,7 +107,7 @@ Rectangle {
             height: parent.height * 0.15
             y: parent.height - height * 1.2
             anchors.horizontalCenter: parent.horizontalCenter
-            color: "#7765FD"
+            color: dark ? "#7765FD" : "#006DA0"
             radius: height/2
             border.color: dark ? "#484F59" : "transparent"
             Text {

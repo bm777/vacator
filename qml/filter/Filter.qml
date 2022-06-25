@@ -78,7 +78,7 @@ Rectangle {
         anchors.topMargin: 15
         x: parent.width * 0.16
         color: dark ? "#b7b6e6" : "#000000"
-        font{family: f; pointSize: 10}
+        font {family: f; pointSize: 10}
     }
 
     /*
