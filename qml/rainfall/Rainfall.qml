@@ -7,7 +7,7 @@ Rectangle {
     anchors.topMargin: 35
     radius: 10
     property bool dark: true
-    property real score: 0.85
+    property real score: 0.0
     property string f: "Comfortaa"
 
     DropShadow {
@@ -86,7 +86,7 @@ Rectangle {
             //
             Text {
                 id: first_
-                text: "85"
+                text: Math.round(score * 100) == 0 ? "--" : Math.round(score * 100)
                 font{family:f; pointSize: 22; bold: false}
                 color: "#FCC304"  //#A7AFDF
                 x: 40
