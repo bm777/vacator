@@ -5,17 +5,20 @@ import os
 from PySide2.QtGui import QGuiApplication
 from PySide2.QtQml import QQmlApplicationEngine
 from PySide2.QtGui import QFontDatabase
+from Worker import Worker
 
 CURRENT_DIRECTORY = os.path.dirname(os.path.realpath(__file__))
 
 if __name__ == "__main__":
     app = QGuiApplication(sys.argv)
     engine = QQmlApplicationEngine()
+    worker = Worker()
     path_font = "Comfortaa/Comfortaa-Regular.ttf"
 
     font = os.path.join(CURRENT_DIRECTORY, "font", path_font)
     _id = QFontDatabase.addApplicationFont(font)
 
+    engine.rootContext().setContextProperty("bridge", worker)
     engine.load(os.path.join(os.path.dirname(__file__), "qml/main.qml"))
 
     if not engine.rootObjects():
