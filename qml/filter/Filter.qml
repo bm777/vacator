@@ -101,7 +101,7 @@ Rectangle {
         anchors.top: place.bottom
         anchors.topMargin: 20 + place.height * 2 // cause of the hidden comparison
 //        y:  parent.height * 0.6// parent.height - height * 4
-        color: dark ? frame.color : "#7564FB"
+        color: dark ? frame.color : "#006DA0" // 7564FB
         radius: height * 0.25
         border.width: 1
         border.color: "transparent"

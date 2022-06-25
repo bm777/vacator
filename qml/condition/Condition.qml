@@ -12,7 +12,7 @@ Rectangle {
     property string f: "Comfortaa"
     property string town: "Washingtown"
     property string compared: "New York"
-    property string condition : "Rainy" // Sunny Cloudy Rainy
+    property string condition : "" // Sunny Cloudy Rainy
 
 //    RectangularGlow {
 //        anchors.fill: root
@@ -128,7 +128,7 @@ Rectangle {
                 glowRadius: encoded.width / 2
                 cornerRadius: glowRadius
                 color: {
-                    if(condition === "Sunny") return "#40F1C40F"
+                    if(condition === "Sunny") return "#20F1C40F"
                     if(condition === "Cloudy") return "#40ADD8E6"
                     return "#40ADD8E6"
                 }
