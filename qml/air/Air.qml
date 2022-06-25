@@ -111,7 +111,7 @@ Rectangle {
 
             Text {
                 id: second_
-                text: "45"
+                text: "--"
                 font{family: f; pointSize: 14; bold: false}
                 color: dark ? "#80ffffff" : "#80000000"
                 x: parent.width * 0.6
