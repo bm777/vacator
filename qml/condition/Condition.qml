@@ -10,7 +10,7 @@ Rectangle {
     anchors.topMargin: 10
     radius: 8
     property string f: "Comfortaa"
-    property string town: "Washingtown"
+    property string town: "town"
     property string compared: "New York"
     property string condition : "" // Sunny Cloudy Rainy
 
