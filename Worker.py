@@ -14,4 +14,4 @@ class Worker(QObject):
         """
         weather data pulled from vacator.vercel.app/
         """
-        return [37, 25.4, 0.005]
+        return [37, 25.4, 0.005, town, datetime]
