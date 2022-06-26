@@ -21,3 +21,18 @@ class Worker(QObject):
         data = re.json()
 
         return data["values"]
+
+    @Slot(result=bool)
+    def check_internet():
+        url = "http://www.kite.com"
+        timeout = 5
+        result = False
+        try:
+        	request = requests.get(url, timeout=timeout)
+        	print("Connected to the Internet")
+            result = True
+        except (requests.ConnectionError, requests.Timeout) as exception:
+        	print("No internet connection.")
+            result = False
+
+        return result
