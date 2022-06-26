@@ -180,6 +180,14 @@ Rectangle {
         running: false
 
     }
+    Text {
+        id: logger
+        text: ""
+        font{family: "Nunito"; pointSize: 12}
+        anchors.top: btn.bottom
+        anchors.topMargin: 20 * 2
+        color: dark ? "#FCC304" : "red"
+    }
 
     /*
         place Input
