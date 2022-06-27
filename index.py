@@ -14,6 +14,18 @@ def load_forecast():
     """
     return pd.read_pickle("forecast.pkl")
 
+def spliter(town):
+    """
+    Split the town who are containing the special character '-'
+    """
+    reformed = ""
+    if "-" in town:
+        reformed = town.split("-")
+        reformed = [t.capitalize() for t in reformed]
+        reformed = " ".join(reformed)
+        return reformed
+    return town.capitalize()
+
 @app.route('/')
 def home():
     """
@@ -24,7 +36,7 @@ def home():
 
 def _get(d, town, ds, dt):
     row_date = d[ d["date"] == dt+" 00:00:00" ]
-    row_town = row_date[row_date["town"] == town]
+    row_town = row_date[row_date["town"] == spliter(town)]
     row_dataset = row_town[row_town["dataset"] == ds]
     return row_dataset["ValueF"].values[0]
 
