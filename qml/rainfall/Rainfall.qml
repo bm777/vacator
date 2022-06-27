@@ -7,7 +7,8 @@ Rectangle {
     anchors.topMargin: 35
     radius: 10
     property bool dark: true
-    property real score: 0.0
+    property real rainfall: 0.0
+//    property real score: 0
     property string f: "Comfortaa"
 
     DropShadow {
@@ -26,14 +27,11 @@ Rectangle {
         color: root.dark ? "#2E3859" : "#ffffff"
         radius: root.radius
 
-        onColorChanged: {
-
-        }
 
         Text {
             id: title__
             text: "Rainfall"
-            font{family: f; pointSize:10}
+            font {family: f; pointSize:10}
             color: dark ? "#B5BBCE" : "#000000"
             y: 18
 //            x: 10
@@ -55,7 +53,7 @@ Rectangle {
             height: parent.height * 0.7
             y: parent.height - height - x
             radius: parent.radius
-            color: dark ? "#2E3859" : "#ffffff"//
+            color: dark ? "#2E3859" : "#ffffff" //
 
 
             Rectangle {
@@ -77,7 +75,7 @@ Rectangle {
                         height: width
                         radius: height/2
                         anchors.horizontalCenter: parent.horizontalCenter
-                        y: parent.height * (1- score) - width/2
+                        y: parent.height * (1- rainfall/50) - width/2
                         color: "#FCC304"
                     }
                 }
@@ -86,14 +84,14 @@ Rectangle {
             //
             Text {
                 id: first_
-                text: Math.round(score * 100) == 0 ? "--" : Math.round(score * 100)
+                text: rainfall/46.69 == 0 ? "--" : rainfall.toFixed(3) //Math.round(score * 100)
                 font{family:f; pointSize: 22; bold: false}
                 color: "#FCC304"  //#A7AFDF
                 x: 40
                 y: parent.height * 0.2
             }
             Text {
-                text: "%"
+                text: '"'
                 anchors.left: first_.right
                 y: parent.height * 0.22
                 font{family: f; pointSize: 12; bold: false}
@@ -117,7 +115,7 @@ Rectangle {
                 y: parent.height * 0.5
             }
             Text {
-                text: "%"
+                text: '"'
                 y: second_.y + second_.height/2 - height/2
                 anchors.left: second_.right
                 anchors.topMargin: 0

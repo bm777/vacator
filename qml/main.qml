@@ -107,7 +107,10 @@ Window {
             anchors.left: air.right
             anchors.leftMargin: (parent.width - width*2 - air.x)/2
             dark: filter.dark
-        } Rectangle {
+            rainfall: filter.precip
+//            score: rainfall / 46.69
+        }
+        Rectangle {
             anchors.fill: rainfall
             radius: rainfall.radius
             id: r_rainfall
