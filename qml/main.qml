@@ -77,6 +77,7 @@ Window {
             height: parent.height * (1 - 0.3) / 2
             anchors.top: cursor.bottom
             dark: filter.dark
+            score: filter.solar
         }
 
         /*

@@ -11,7 +11,7 @@ Rectangle {
     property string placeholder_text: ""
     property bool dark: true
     property string img_src: ""
-    property string plaintext: ""
+    property string plaintext: content.text
     property string f: "Comfortaa"
     property string indicator: ""
     property string warning: ""
@@ -121,7 +121,7 @@ Rectangle {
                 root.color = "#7564FB"
 
             }else if(!(content.text == "") && !root.dark) { /// not empty and light
-                root.color = "#207564FB"
+                root.color = "#20006DA0"
                 content.color = "#a0000000"
                 label.color = "#80000000"
             }else if(!root.dark && content.text == ""){     /// empty and light

@@ -12,7 +12,8 @@ Rectangle {
     property string f: "Comfortaa"
     property string town: "town"
     property string compared: "town 2"
-    property string condition : "" // Sunny Cloudy Rainy
+    property real score: 0
+    property string condition : score !== 0 ? "Sunny" : "" // Sunny Cloudy Rainy
 
 //    RectangularGlow {
 //        anchors.fill: root
@@ -141,7 +142,7 @@ Rectangle {
                     if(condition==="Sunny") return 15
                     return -10
                 }
-                text: condition
+                text: condition != "" ? Math.round(score) + " w/m2" : ""
                 color: {
                     if(condition==="Cloudy") return dark ? "#ffffff" : "#000000"
                     if(condition==="Rainy") return dark ? "#ffffff" : "#000000"

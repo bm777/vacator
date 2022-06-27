@@ -39,14 +39,14 @@ Rectangle {
         }
 
         Text {id: t
-            text: temperature == 0 ? "--" : temperature
+            text: temperature == 0 ? "--" : Math.round(temperature)
             font{family: f; pointSize: 40}
             color:  dark ? "#7564FB" : "#006DA0"
             anchors.horizontalCenter: parent.horizontalCenter
             y: parent.height * 0.25
         }
         Text {
-            text: "°C"
+            text: "°F"
             font{family: f; pointSize: 20}
             color: t.color //004DF7
             x: t.x + t.width

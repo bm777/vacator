@@ -10,6 +10,7 @@ Rectangle {
     property real temp: 0
     property real precip: 0
     property real solar: 0
+    property string town: "town"
     property string f: "Comfortaa"
 
     property bool loader: {
@@ -32,7 +33,8 @@ Rectangle {
 
         Rectangle {
             property real _d: {
-                var temporary = bridge.wdata("Miami", "2022-06-25")
+                var temporary = bridge.wdata(place.plaintext, "2022-06-25")
+                root.town = place.plaintext
                 root.temp = temporary[0]
                 root.precip = temporary[1]
                 root.solar = temporary[2]
