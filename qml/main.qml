@@ -140,6 +140,7 @@ Window {
             anchors.horizontalCenter: parent.horizontalCenter
             y: parent.height * 0.14
             dark: filter.dark
+            temperature: filter.temp
         }
         Infos {
             id: infoss

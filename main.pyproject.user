@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 7.0.2, 2022-06-25T16:24:17. -->
+<!-- Written by QtCreator 7.0.2, 2022-06-27T11:21:28. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -281,6 +281,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/bm7/space/vacator/Worker.py</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/bm7/space/vacator/Worker.py</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/bm7/space/vacator/Worker.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{423b08be-b150-4f49-9d68-2b475426bef4}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/bm7/space/vacator/Worker.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
