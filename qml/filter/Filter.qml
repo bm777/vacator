@@ -17,6 +17,7 @@ Rectangle {
             ll.sourceComponent = comp
             return true
         } else
+            ll.sourceComponent = null
             return false
     }
     Loader {
