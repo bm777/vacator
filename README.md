@@ -1,6 +1,7 @@
 # Vacator
 Dashboard to show the place on where we can go for vacation
 
+![demo](assets/dclimate.gif)
 
 ### What I used ?
  - [x] Python3.6
