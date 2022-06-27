@@ -33,7 +33,15 @@ Rectangle {
 
         Rectangle {
             property real _d: {
-                var temporary = bridge.wdata(place.plaintext, "2022-06-25")
+                if(place.plaintext.includes(" ")){
+                    var reformed = place.plaintext.split(" ")
+                    reformed = reformed.join("-")
+                }else{
+                    reformed = place.plaintext
+                }
+
+
+                var temporary = bridge.wdata(reformed, "2022-06-25")
                 root.town = place.plaintext
                 root.temp = temporary[0]
                 root.precip = temporary[1]

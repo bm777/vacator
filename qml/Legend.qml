@@ -2,7 +2,7 @@ import QtQuick 2.0
 
 Rectangle {
     id: root
-    property string first: "Town"
+    property string first: "Town 1"
     property string second: "--"
     color: "transparent"
     property bool dark: true
