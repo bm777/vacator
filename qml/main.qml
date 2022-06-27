@@ -78,6 +78,7 @@ Window {
             anchors.top: cursor.bottom
             dark: filter.dark
             score: filter.solar
+            town: filter.town
         }
 
         /*
