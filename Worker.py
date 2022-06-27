@@ -22,17 +22,17 @@ class Worker(QObject):
 
         return data["values"]
 
-    @Slot(result=bool)
-    def check_internet():
-        url = "http://www.kite.com"
+    @Slot(result=int)
+    def check_internet(self):
+        url = "http://www.google.com"
         timeout = 5
-        result = False
+        result = 0
         try:
             request = requests.get(url, timeout=timeout)
             print("Connected to the Internet")
-            result = True
+            result = 1
         except (requests.ConnectionError, requests.Timeout) as exception:
             print("No internet connection.")
-            result = False
+            result = 0
 
         return result

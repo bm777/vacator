@@ -16,10 +16,10 @@ Rectangle {
         if(busy.running == true) {
             ll.sourceComponent = comp
             return true
-        }
-        return false
+        } else
+            return false
     }
-    Loader{
+    Loader {
         id: ll
         asynchronous: true
 //        sourceComponent: comp
@@ -37,6 +37,7 @@ Rectangle {
                 root.solar = temporary[2]
                 print(temp, precip, solar)
                 busy.running = false
+                ll.visible = false
                 return 0
             }
         }
@@ -184,8 +185,8 @@ Rectangle {
         id: logger
         text: ""
         font{family: "Nunito"; pointSize: 12}
-        anchors.top: btn.bottom
-        anchors.topMargin: 20 * 2
+        anchors.top: busy.bottom
+        anchors.topMargin: 20
         color: dark ? "#FCC304" : "red"
     }
 
