@@ -8,6 +8,7 @@ Rectangle {
         property type name: value
     **/
     property string placeholder_text: ""
+    property string plaintext: content.text
     property string img_src: ""
     property string indicator: ""
     property string warning: ""

@@ -41,7 +41,7 @@ Rectangle {
                 }
 
 
-                var temporary = bridge.wdata(reformed, "2022-06-25")
+                var temporary = bridge.wdata(reformed, date.plaintext)
                 root.town = place.plaintext
                 root.temp = temporary[0]
                 root.precip = temporary[1]
