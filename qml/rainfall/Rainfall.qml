@@ -124,6 +124,21 @@ Rectangle {
             }
         }
     }
+    Text {
+        id: bucket
+        text: {
+            var val = rainfall.toFixed(3)
+            if (rainfall/46 === 0) return ""
+            if(val < 0.1) return "Light"
+            else if(val >= 0.1 && val < 0.3) return "Moderate"
+            else if(val >= 0.3) return "Heavy"
+        }
+
+        font{family: f; pointSize: 11; bold: false}
+        color: dark ? "#90ffffff"  : "#90000000"
+        x: (parent.width - width)/2
+        y: parent.height * 0.87
+    }
 
     /////////////////////////// Animation
 
