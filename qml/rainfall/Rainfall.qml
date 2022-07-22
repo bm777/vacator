@@ -75,7 +75,13 @@ Rectangle {
                         height: width
                         radius: height/2
                         anchors.horizontalCenter: parent.horizontalCenter
-                        y: parent.height * (1- rainfall/50) - width/2
+                        y: {
+                            if(rainfall/46 == 0) return (parent.height - width/2)
+                            else if(rainfall < 0.1) return (parent.height - width/2) * (1 - 0.1)
+                            else if(rainfall >= 0.1 && rainfall < 0.3) return (parent.height - width/2) * (1 - 0.55)
+                            else if(rainfall >= 0.3) return (parent.height - width/2) * (1 - 0.9)
+                        }
+
                         color: "#FCC304"
                     }
                 }
